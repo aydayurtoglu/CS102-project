@@ -4,3 +4,4 @@
 Group Members
 
 Ayda Yurtoğlu 21903153
+Ata Seren 21901575
