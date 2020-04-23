@@ -6,3 +6,8 @@ We created a shared repository in GitHub.
 
 16th April 2020
 We distributed the workload of the project. We decided to have group meetings at Thursdays every week.
+
+23th April 2020
+We talked about mechanics of Android Studio, adding camera footage to app, design tools and possible class hierarchy of app.
+We also ran our new simple Android Studio project.
+A meeting planned for tomorrow to discuss our class hierarchies.
