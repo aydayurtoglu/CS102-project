@@ -1,5 +1,5 @@
 package layout
 
-class Photo {
+class Photo
 
 }
