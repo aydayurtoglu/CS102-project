@@ -14,4 +14,8 @@ I started to keep records of our meetings and I downloaded and started to learn 
 ### ~ 24th April 2020 ~
 After the meeting and brainstorming, I started to think and work on my project assignment about UML diagram for class hierarcihes and assigned project class.
 
+### ~ 3rd May 2020 ~
+I completed half of the Android Studio class that I took from Udemy. I will further do a research about adding camera to app and work on design and code of some of the classes.
+
+
 ****
