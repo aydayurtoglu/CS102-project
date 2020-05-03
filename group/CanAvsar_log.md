@@ -1,17 +1,9 @@
 # CS102 ~ Personal Log page ~
 ****
-## my full name 
+## Can Avsar 
 ****
 
 On this page I will keep a weekly record of what I have done for the CS102 group project. This page will be submitted together with the rest of the repository, in partial fulfillment of the CS102 course requirements.
 
-### ~ date ~
-This week I learn xyz and worked out...
+May 4 - May 11 Week
 
-### ~ date ~
-This week I helped abc brainstorm ideas for...
-
-### ~ date ~
-blah, blah, blah...
-
-****
