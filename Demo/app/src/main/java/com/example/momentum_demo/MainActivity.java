@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonStart = (Button) findViewById(R.id.ButtonStart); //we typecasting to ensure that id belongs to a button
+        buttonStart = (Button) findViewById(R.id.ButtonStart); //we typecasted to ensure that id belongs to a button
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
