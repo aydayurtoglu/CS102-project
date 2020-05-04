@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.SearchView;
 
 import java.util.ArrayList;
@@ -19,11 +20,10 @@ public class Main2Activity extends AppCompatActivity {
     private ImageButton buttonHelp;
     private ImageButton buttonBack;
     private ArrayList<ImageButton> buttons;
-    //private ImageButton buttonDelete;
     private ImageButton buttonAdd;
-    //private SearchView searchView;
+    private SearchView searchView;
 
-    // private GridLayout layout = (GridLayout) findViewById (R.id.gridLayout);
+    private LinearLayout layout = (LinearLayout) findViewById (R.id.linearLayout);
 
 
     @SuppressLint("WrongViewCast")
@@ -35,10 +35,11 @@ public class Main2Activity extends AppCompatActivity {
         buttonHelp = findViewById(R.id.helpButton);
         buttonBack = findViewById(R.id.backButton);
         buttonAdd = findViewById(R.id.addButton);
-        //buttonDelete = findViewById(R.id.deleteProjectButton);
-        buttons = new ArrayList<ImageButton>;
 
-        //searchView = findViewById(R.id.searchView);
+
+        buttons = new ArrayList<ImageButton>();
+
+        searchView = findViewById(R.id.searchView);
 
 
 
@@ -62,11 +63,10 @@ public class Main2Activity extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-               // Button a1 = new Button( getApplicationContext());
-                //a1.setText("Dynamic layouts ftw!");
-                //a1.setVisibility(View.VISIBLE);
-                //layout.addView(a1);
+                Button a1 = new Button( getApplicationContext());
+                a1.setText("Dynamic layouts ftw!");
+                a1.setVisibility(View.VISIBLE);
+                layout.addView(a1);
             }
         });
 

@@ -8,25 +8,20 @@
     tools:context=".Main2Activity">
 
 
-    <GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="332dp"
-        android:layout_height="300dp"
-        android:layout_centerInParent="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="27dp"
-        android:background="#303F9F"
-        android:columnCount="3"
-        android:rowCount="3"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="364dp"
+        android:layout_height="305dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/addButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"/>
+        app:layout_constraintStart_toStartOf="parent" />
+
 
     <ImageButton
         android:id="@+id/helpButton"
