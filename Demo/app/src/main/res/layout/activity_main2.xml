@@ -7,6 +7,27 @@
     android:background="@android:color/black"
     tools:context=".Main2Activity">
 
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="332dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="27dp"
+        android:background="#303F9F"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toTopOf="@+id/addButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"/>
+
     <ImageButton
         android:id="@+id/helpButton"
         android:layout_width="70dp"
@@ -66,7 +87,7 @@
         android:layout_marginRight="170dp"
         android:layout_marginBottom="16dp"
         android:background="#00FFFFFF"
-        android:onClick="hgf"
+        android:contentDescription="@android:string/yes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.025"

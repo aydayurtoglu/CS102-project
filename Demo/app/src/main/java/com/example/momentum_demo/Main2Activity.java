@@ -3,10 +3,12 @@ package com.example.momentum_demo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.SearchView;
 
@@ -16,16 +18,13 @@ public class Main2Activity extends AppCompatActivity {
 
     private ImageButton buttonHelp;
     private ImageButton buttonBack;
-<<<<<<< HEAD
-    private ImageButton buttonAdd;
     private ArrayList<ImageButton> buttons;
     //private ImageButton buttonDelete;
-    //private ImageButton buttonAdd;
-=======
-    private ImageButton buttonDelete;
     private ImageButton buttonAdd;
->>>>>>> 96b340418c15e8d55c176d9241188e276d1b9c68
     //private SearchView searchView;
+
+    final GridLayout layout = (GridLayout) findViewById (R.id.gridLayout);
+
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -35,16 +34,13 @@ public class Main2Activity extends AppCompatActivity {
 
         buttonHelp = findViewById(R.id.helpButton);
         buttonBack = findViewById(R.id.backButton);
-        buttonAdd = findViewById(R.id.addProjectButton);
+        buttonAdd = findViewById(R.id.addButton);
         //buttonDelete = findViewById(R.id.deleteProjectButton);
-<<<<<<< HEAD
-        //buttonAdd = findViewById(R.id.addProjectButton);
-        buttons = new ArrayList<ImageButton>;
-=======
-       // buttonAdd = findViewById(R.id.addProjectButton);
->>>>>>> 96b340418c15e8d55c176d9241188e276d1b9c68
-
         //searchView = findViewById(R.id.searchView);
+
+        buttons = new ArrayList<ImageButton>();
+
+
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,9 +61,12 @@ public class Main2Activity extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                private ImageButton e
 
-                buttons.add(ImageButton e)
+               // Button a1 = new Button( getApplicationContext());
+                //a1.setText("Dynamic layouts ftw!");
+                //a1.setVisibility(View.VISIBLE);
+                //layout.addView(a1);
+
             }
         });
 
