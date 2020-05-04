@@ -10,12 +10,21 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SearchView;
 
+import java.util.ArrayList;
+
 public class Main2Activity extends AppCompatActivity {
 
     private ImageButton buttonHelp;
     private ImageButton buttonBack;
+<<<<<<< HEAD
+    private ImageButton buttonAdd;
+    private ArrayList<ImageButton> buttons;
     //private ImageButton buttonDelete;
     //private ImageButton buttonAdd;
+=======
+    private ImageButton buttonDelete;
+    private ImageButton buttonAdd;
+>>>>>>> 96b340418c15e8d55c176d9241188e276d1b9c68
     //private SearchView searchView;
 
     @SuppressLint("WrongViewCast")
@@ -26,8 +35,14 @@ public class Main2Activity extends AppCompatActivity {
 
         buttonHelp = findViewById(R.id.helpButton);
         buttonBack = findViewById(R.id.backButton);
+        buttonAdd = findViewById(R.id.addProjectButton);
         //buttonDelete = findViewById(R.id.deleteProjectButton);
+<<<<<<< HEAD
         //buttonAdd = findViewById(R.id.addProjectButton);
+        buttons = new ArrayList<ImageButton>;
+=======
+       // buttonAdd = findViewById(R.id.addProjectButton);
+>>>>>>> 96b340418c15e8d55c176d9241188e276d1b9c68
 
         //searchView = findViewById(R.id.searchView);
 
@@ -46,6 +61,16 @@ public class Main2Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        buttonAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                private ImageButton e
+
+                buttons.add(ImageButton e)
+            }
+        });
+
 
     }
 

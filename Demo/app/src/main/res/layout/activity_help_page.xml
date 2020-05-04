@@ -24,21 +24,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/homeAsUpIndicator" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="331dp"
-        android:layout_height="552dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:contentDescription="@android:string/yes"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:singleLine="false"
-        android:text="Welcome to help page \n"
-        android:textColor="@color/design_default_color_background"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="332dp"
+        android:layout_height="558dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text='How to use? Projects Page: 	A project is an animation/slideshow you create. You will see all of your existing projects on this page. 	You can click on any of your projects and it will open your project. 	You can click on "Add Project" button to create a new project! 	You can use the "Search" bar by clicking on it and typing the title of the project you want to find. 	You can delete an existing project by clicking on the project you want to delete and then click on the "Delete" button located on the bottom left of your device. 	You can access your deleted projects by clicking on the "Recycle" button located on the top right of your screen. You will see all your deleted projects on this page.  Add Project Page:  	You will see the app using your camera. You can simply take pictures by clicking on the circle button. Then you will see your taken picture on bottom of your screen. 	If you are done with your project or you want to delete some pictures, simply click on "DONE" and it will lead you to a new page where you will see your taken pictures. 	 Editing Project Page: 	To delete a picture, click on the picture you want to delete and then click on the "Delete" button located on the bottom left of your device. 	You can access your deleted pictures by clicking on the "Recycle" button located on the top right of your screen. You will see all your deleted pictures on this page. 	To finalize your project click on "Create Movie" button. You will see your photos as a movie.  Create Project Page: 	To change the speed of your project, there is a speed bar located on the bottom right of your device. Drag the circle icon towards "turtle" to slow down or "rabbit" to go faster. 	To save your project, click on "DONE" and it will lead you to your projects page. '
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
