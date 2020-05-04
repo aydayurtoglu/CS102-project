@@ -23,7 +23,7 @@ public class Main2Activity extends AppCompatActivity {
     private ImageButton buttonAdd;
     //private SearchView searchView;
 
-    final GridLayout layout = (GridLayout) findViewById (R.id.gridLayout);
+    // private GridLayout layout = (GridLayout) findViewById (R.id.gridLayout);
 
 
     @SuppressLint("WrongViewCast")
