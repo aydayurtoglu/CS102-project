@@ -19,8 +19,17 @@ public class Main2Activity extends AppCompatActivity {
     private ImageButton buttonHelp;
     private ImageButton buttonBack;
     private ArrayList<ImageButton> buttons;
+<<<<<<< HEAD
+    private ImageButton buttonDelete;
+=======
+    private ArrayList<ImageButton> buttons;
     //private ImageButton buttonDelete;
     private ImageButton buttonAdd;
+>>>>>>> abbf56b4e67e5d23407b4972c25361db076065ba
+=======
+    //private ImageButton buttonDelete;
+    private ImageButton buttonAdd;
+>>>>>>> abbf56b4e67e5d23407b4972c25361db076065ba
     //private SearchView searchView;
 
     // private GridLayout layout = (GridLayout) findViewById (R.id.gridLayout);
@@ -36,6 +45,16 @@ public class Main2Activity extends AppCompatActivity {
         buttonBack = findViewById(R.id.backButton);
         buttonAdd = findViewById(R.id.addButton);
         //buttonDelete = findViewById(R.id.deleteProjectButton);
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+        buttons = new ArrayList<ImageButton>;
+
+
+=======
+>>>>>>> abbf56b4e67e5d23407b4972c25361db076065ba
+=======
+>>>>>>> abbf56b4e67e5d23407b4972c25361db076065ba
         //searchView = findViewById(R.id.searchView);
 
         buttons = new ArrayList<ImageButton>();
@@ -61,12 +80,27 @@ public class Main2Activity extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
+<<<<<<< HEAD
+                private ImageButton e;
+
+                buttons.add(ImageButton e);
+=======
 
                // Button a1 = new Button( getApplicationContext());
                 //a1.setText("Dynamic layouts ftw!");
                 //a1.setVisibility(View.VISIBLE);
                 //layout.addView(a1);
 
+>>>>>>> abbf56b4e67e5d23407b4972c25361db076065ba
+=======
+
+               // Button a1 = new Button( getApplicationContext());
+                //a1.setText("Dynamic layouts ftw!");
+                //a1.setVisibility(View.VISIBLE);
+                //layout.addView(a1);
+
+>>>>>>> abbf56b4e67e5d23407b4972c25361db076065ba
             }
         });
 
