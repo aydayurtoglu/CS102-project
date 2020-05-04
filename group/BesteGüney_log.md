@@ -21,3 +21,8 @@ I wrote the design code for our first page (Welcoming page) for our project.
 I searched for existing classes for camera usage in our project.
 I drawed a UML diagram to discuss class hierarchy of our project.
 ****
+
+### 27.04.2020 - 03.04.2020
+This week, I searched for libraries that we can use in our project.
+	From websites github and android arsenal
+I searched for how internal storage in applications are used in android.
