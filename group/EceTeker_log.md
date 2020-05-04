@@ -15,4 +15,8 @@ I searched some methods that could come handy when we are doing our projects.
 ### ~ 26th April 2020 ~
 I helped the group brainstorming ideas about our class hierachy by creating an UML diagram.
 
+### ~ 4th May 2020 ~ 
+I learned how to insert camera into the app and use the view.
+Beste and I brainstormed ideas on how to add all the taken views to an ArrayList and use them.
+
 ****
