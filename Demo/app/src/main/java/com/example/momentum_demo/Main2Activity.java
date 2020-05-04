@@ -14,8 +14,8 @@ public class Main2Activity extends AppCompatActivity {
 
     private ImageButton buttonHelp;
     private ImageButton buttonBack;
-    //private ImageButton buttonDelete;
-    //private ImageButton buttonAdd;
+    private ImageButton buttonDelete;
+    private ImageButton buttonAdd;
     //private SearchView searchView;
 
     @SuppressLint("WrongViewCast")
@@ -27,7 +27,7 @@ public class Main2Activity extends AppCompatActivity {
         buttonHelp = findViewById(R.id.helpButton);
         buttonBack = findViewById(R.id.backButton);
         //buttonDelete = findViewById(R.id.deleteProjectButton);
-        //buttonAdd = findViewById(R.id.addProjectButton);
+       // buttonAdd = findViewById(R.id.addProjectButton);
 
         //searchView = findViewById(R.id.searchView);
 
