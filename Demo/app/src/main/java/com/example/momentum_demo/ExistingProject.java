@@ -6,39 +6,28 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.SearchView;
 
-public class Main2Activity extends AppCompatActivity {
+public class ExistingProject extends AppCompatActivity {
 
-    private ImageButton buttonHelp;
     private ImageButton buttonBack;
-    //private ImageButton buttonDelete;
-    //private ImageButton buttonAdd;
-    //private SearchView searchView;
+    private ImageButton buttonRename;
 
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_existing_project);
 
-        buttonHelp = findViewById(R.id.helpButton);
         buttonBack = findViewById(R.id.backButton);
-        //buttonDelete = findViewById(R.id.deleteProjectButton);
-        //buttonAdd = findViewById(R.id.addProjectButton);
-
-        //searchView = findViewById(R.id.searchView);
+        buttonRename = findViewById(R.id.renameButton);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Main2Activity.this, MainActivity.class);
+                Intent intent = new Intent(ExistingProject.this, Main2Activity.class);
                 startActivity(intent);
             }
         });
-
     }
-
 }
