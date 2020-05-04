@@ -20,18 +20,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonStart = (Button) findViewById(R.id.ButtonStart); //we typecasted to ensure that id belongs to a button
+        buttonStart = findViewById(R.id.ButtonStart);
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openProjectPage();
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
             }
         });
-    }
-
-    public void openProjectPage()
-    {
-        Intent intent = new Intent(this, Main2Activity.class);
-        startActivity(intent);
     }
 }

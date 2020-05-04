@@ -16,8 +16,8 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        buttonHelp = (Button) findViewById(R.id.helpButton);
-        buttonBack = (Button) findViewById(R.id.backButton);
+        buttonHelp = findViewById(R.id.helpButton);
+        buttonBack = findViewById(R.id.backButton);
     }
 
 }
