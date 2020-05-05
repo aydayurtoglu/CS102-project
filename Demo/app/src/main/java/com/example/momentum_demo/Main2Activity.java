@@ -66,6 +66,7 @@ public class Main2Activity extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Creating a new button for the new project
              Button btn = new Button( Main2Activity.this);
              params.gravity = Gravity.CENTER_HORIZONTAL;
              btn.setLayoutParams(params);
@@ -73,7 +74,9 @@ public class Main2Activity extends AppCompatActivity {
              btn.setVisibility(View.VISIBLE);
              btn.setGravity(View.TEXT_ALIGNMENT_GRAVITY);
              layout.addView(btn);
-             count[0]++;
+
+             // Creating the new project
+             Project newProject = new Project( "Project " + count[0]);
 
                 btn.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -82,6 +85,8 @@ public class Main2Activity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
+
+                count[0]++;
              }
 
         });
