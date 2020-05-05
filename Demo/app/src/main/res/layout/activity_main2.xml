@@ -7,6 +7,22 @@
     android:background="@android:color/black"
     tools:context=".Main2Activity">
 
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="364dp"
+        android:layout_height="305dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/addButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
     <ImageButton
         android:id="@+id/helpButton"
         android:layout_width="70dp"
@@ -66,7 +82,7 @@
         android:layout_marginRight="170dp"
         android:layout_marginBottom="16dp"
         android:background="#00FFFFFF"
-        android:onClick="hgf"
+        android:contentDescription="@android:string/yes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.025"
