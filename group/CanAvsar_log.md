@@ -20,6 +20,7 @@ I watched some videos to learn how to write code to take picture with camera and
 I made some research and also enrolled an Udemy course which is about the basics of Android Studio. Watched a little, but trying to finish it as soon as I can.
 
 ### May 4 - May 11
-I have started writed some code of classes and continued to learn from the online course. It is a long course but when I finish it, I will have learned much about Android Studio.
+I have started writed some code and continued to learn from the online course. It is a long course but when I finish it, I will have learned much about Android Studio. I and Ayda wrote some code about app's Projects page and made some design by adding some buttons and text panels.
+
 
 
