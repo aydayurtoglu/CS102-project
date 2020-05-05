@@ -9,13 +9,13 @@
 
 
     <LinearLayout
-       android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout"
         android:layout_width="364dp"
         android:layout_height="305dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginRight="21dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginBottom="18dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/addButton"

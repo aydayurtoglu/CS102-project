@@ -24,7 +24,7 @@ public class Main2Activity extends AppCompatActivity {
     private ImageButton buttonDelete;
     private SearchView searchView;
     private ArrayList<ImageButton> buttons;
-    private LinearLayout layout = (LinearLayout) findViewById (R.id.linearLayout);
+    private LinearLayout layout;
 
 
     @SuppressLint("WrongViewCast")
@@ -38,6 +38,11 @@ public class Main2Activity extends AppCompatActivity {
         buttonAdd = findViewById(R.id.addButton);
         searchView = findViewById(R.id.searchView);
         buttons = new ArrayList<ImageButton>();
+
+
+        layout = findViewById (R.id.linearLayout);
+        final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.setMargins(20, 10, 20, 10);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,19 +60,30 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
+        // Adding project buttons for every new project
+        final int[] count = {1};
+
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Button a1 = new Button( Main2Activity.this);
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-                params.setMargins(20, 10, 20, 10);
-                params.gravity = Gravity.CENTER_HORIZONTAL;
-                a1.setLayoutParams(params);
-                a1.setText("Dynamic layouts ftw!");
-                a1.setVisibility(View.VISIBLE);
-                a1.setGravity(View.TEXT_ALIGNMENT_GRAVITY);
-                layout.addView(a1);
+             Button btn = new Button( Main2Activity.this);
+             params.gravity = Gravity.CENTER_HORIZONTAL;
+             btn.setLayoutParams(params);
+             btn.setText("Project " + count[0]);
+             btn.setVisibility(View.VISIBLE);
+             btn.setGravity(View.TEXT_ALIGNMENT_GRAVITY);
+             layout.addView(btn);
+             count[0]++;
+
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Main2Activity.this, ExistingProject.class);
+                        startActivity(intent);
                     }
+                });
+             }
+
         });
 
 
