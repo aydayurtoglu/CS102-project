@@ -63,11 +63,42 @@ public class Main2Activity extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 Button a1 = new Button( getApplicationContext());
                 a1.setText("Dynamic layouts ftw!");
                 a1.setVisibility(View.VISIBLE);
                 layout.addView(a1);
             }
+=======
+                // Creating a new button for the new project
+                int id;
+                id = count[0];
+             Button btn = new Button( Main2Activity.this);
+             params.gravity = Gravity.CENTER_HORIZONTAL;
+             btn.setLayoutParams(params);
+             btn.setText("Project " + count[0]);
+             btn.setVisibility(View.VISIBLE);
+             btn.setGravity(View.TEXT_ALIGNMENT_GRAVITY);
+             btn.setId(id);
+             layout.addView(btn);
+
+             // Creating the new project
+             // Project newProject = new Project( "Project " + count[0]);
+             // ExistingProject projectPage = new ExistingProject(newProject);
+
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Main2Activity.this, ExistingProject.class);
+                        startActivity(intent);
+
+                    }
+                });
+
+                count[0]++;
+             }
+
+>>>>>>> parent of f3c4b15... adjustments
         });
 
 
