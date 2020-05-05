@@ -14,6 +14,11 @@ public class ExistingProject extends AppCompatActivity {
     private ImageButton buttonRename;
     private Project project;
 
+    // public ExistingProject(Project thisProject) {
+    //    project = thisProject;
+    //}
+
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +35,8 @@ public class ExistingProject extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
     }
 }
