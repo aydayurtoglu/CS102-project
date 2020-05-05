@@ -23,7 +23,7 @@ public class Main2Activity extends AppCompatActivity {
     private ImageButton buttonAdd;
     private SearchView searchView;
 
-    private LinearLayout layout = (LinearLayout) findViewById (R.id.linearLayout);
+    //private LinearLayout layout = (LinearLayout) findViewById (R.id.linearLayout);
 
 
     @SuppressLint("WrongViewCast")
@@ -63,10 +63,10 @@ public class Main2Activity extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Button a1 = new Button( getApplicationContext());
-                a1.setText("Dynamic layouts ftw!");
-                a1.setVisibility(View.VISIBLE);
-                layout.addView(a1);
+               // Button a1 = new Button( getApplicationContext());
+                //a1.setText("Dynamic layouts ftw!");
+               // a1.setVisibility(View.VISIBLE);
+                //layout.addView(a1);
             }
         });
 
