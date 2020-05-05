@@ -45,14 +45,19 @@ Eren, Ayda and Ece will work further on class hierarchy and MVC pattern we will 
 ****
 
 ****
-### Meeting ~ (date, duration)
+### Meeting ~ (3rd May 2020, one and a half hour)
 ****
 **Present:** All  _**Absent:** None
 
 **Discussion:** 
+We talked about our knowledge about Android Studio and teached some of the attributes of IDE each other. Some of the attributes are creating new activities, new designs and their layouts, working on emulators and HAXM stuff.
 
 
-**ToDo:** 
+**ToDo:**
+Ata and Eren will design "New Project" and "Camera" activites and research about their required codes and libraries.
+Can and Ayda will design "Projects" and "Existing Project" activities.
+Beste and Ece will work on codes of "Projects" and "Video" classes.
+Everyone will also continue to learn features of Android Studio.
 
 ****
 

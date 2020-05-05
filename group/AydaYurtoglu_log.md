@@ -20,4 +20,8 @@ I tried writing some code in Android Studio.
 I recreated the logs of our group as our instructor wanted.
 I combined my, Ece's and Beste's UML diagrams into one diagram.
 
+### ~ 30th April 2020 ~
+I did more research on classes and library of Android Studio.
+I tried writing the Photo class but failed.
+
 ****
