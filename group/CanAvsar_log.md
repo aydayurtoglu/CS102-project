@@ -6,7 +6,7 @@
 On this page I will keep a weekly record of what I have done for the CS102 group project. This page will be submitted together with the rest of the repository, in partial fulfillment of the CS102 course requirements.
 
 ### Note: 
-Started logging a little bit late, but the dates are correct as I remember them.
+Started logging a little late, but the dates are as correct as I remember them.
 
 ****
 
