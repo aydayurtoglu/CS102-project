@@ -8,7 +8,7 @@ On this page I will keep a weekly record of what I have done for the CS102 group
 ****
 
 ### April 6 - April 12
-I enrolled the project repository made by Ayda, and tried to get familiar with GitHub with some help from my team members.
+I enrolled the project repository made by Ayda, and tried to get familiar with GitHub with some help from my team members. Also downloaded GitHub Desktop application to my computer for working more efficiently.
 
 ### April 13 - April 19
 I downloaded Android Studio on my computer and tried to understand it. Created an empty project for my experiments and made some changes in its settings.
