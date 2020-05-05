@@ -6,7 +6,9 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
@@ -41,7 +43,9 @@ public class Main2Activity extends AppCompatActivity {
 
         searchView = findViewById(R.id.searchView);
 
-
+        layout = findViewById (R.id.linearLayout);
+        final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        params.setMargins(20, 10, 20, 10);
 
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
@@ -60,21 +64,15 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
+        final int[] count = {1};
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
-                Button a1 = new Button( getApplicationContext());
-                a1.setText("Dynamic layouts ftw!");
-                a1.setVisibility(View.VISIBLE);
-                layout.addView(a1);
-            }
-=======
                 // Creating a new button for the new project
                 int id;
                 id = count[0];
              Button btn = new Button( Main2Activity.this);
-             params.gravity = Gravity.CENTER_HORIZONTAL;
+                params.gravity = Gravity.CENTER_HORIZONTAL;
              btn.setLayoutParams(params);
              btn.setText("Project " + count[0]);
              btn.setVisibility(View.VISIBLE);
@@ -98,7 +96,6 @@ public class Main2Activity extends AppCompatActivity {
                 count[0]++;
              }
 
->>>>>>> parent of f3c4b15... adjustments
         });
 
 
