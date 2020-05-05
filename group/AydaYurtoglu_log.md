@@ -24,4 +24,11 @@ I combined my, Ece's and Beste's UML diagrams into one diagram.
 I did more research on classes and library of Android Studio.
 I tried writing the Photo class but failed.
 
+<<<<<<< HEAD
+=======
+### ~ 4th May 2020 ~
+Can and I teamed up to create and design different activities.
+We worked on it together for three hours.
+
+>>>>>>> parent of f3c4b15... adjustments
 ****

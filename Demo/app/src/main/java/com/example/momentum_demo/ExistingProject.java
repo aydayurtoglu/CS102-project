@@ -12,6 +12,15 @@ public class ExistingProject extends AppCompatActivity {
 
     private ImageButton buttonBack;
     private ImageButton buttonRename;
+<<<<<<< HEAD
+=======
+    private Project project;
+
+    // public ExistingProject(Project thisProject) {
+    //    project = thisProject;
+    //}
+
+>>>>>>> parent of f3c4b15... adjustments
 
     @SuppressLint("WrongViewCast")
     @Override
