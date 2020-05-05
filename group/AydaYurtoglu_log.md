@@ -28,4 +28,10 @@ I tried writing the Photo class but failed.
 Can and I teamed up to create and design different activities.
 We worked on it together for three hours.
 
+### ~ 5th May 2020 ~
+Can and I worked on the same activities today but we realised that we need
+to know databases to construct our app. So we will have a meeting tomorrow to make our
+design easier.
+
+
 ****

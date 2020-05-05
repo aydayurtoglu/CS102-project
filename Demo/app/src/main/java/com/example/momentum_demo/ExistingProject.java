@@ -14,10 +14,6 @@ public class ExistingProject extends AppCompatActivity {
     private ImageButton buttonRename;
     private Project project;
 
-    // public ExistingProject(Project thisProject) {
-    //    project = thisProject;
-    //}
-
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -26,7 +22,7 @@ public class ExistingProject extends AppCompatActivity {
         setContentView(R.layout.activity_existing_project);
 
         buttonBack = findViewById(R.id.backButton);
-        buttonRename = findViewById(R.id.renameButton);
+       // buttonRename = findViewById(R.id.renameButton);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
