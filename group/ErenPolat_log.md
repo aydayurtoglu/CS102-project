@@ -10,11 +10,18 @@ I joined the repository of the group on GitHub
 Tried to figure out the different methods included on Android Studio. Also searched about activity etc.
 
 ### ~ 15th April 2020~
-Watched videos about Android Studio, on how to use it and learned about layouts and 
-searched on how to use the camera of the phone for our app.
+Watched videos about Android Studio, on how to use it and learned about layouts (absolute, relative etc.) and 
+searched on how to use the camera of the phone for our app. 
 
 
 ### ~ 22th April 2020
-I did brainstorm about the ideas to draw our UML, and to build a class hierarchy.
+I did brainstorm about the ideas to draw our UML, and to build a class hierarchy for
+our project.
+
+### ~ 29th April 2020
+
+I learned how to switch between activities by creating buttons and ActionListeners etc. Researched on how to 
+store the photos that we took in the app and perhaps how to show them subsequently to create a stop motion movie
+of ours. 
 
 ****
