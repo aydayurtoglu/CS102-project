@@ -10,6 +10,9 @@ Started logging a little bit late, but the dates are correct as I remember them.
 
 ****
 
+## April 6 - April 12
+I enrolled the project repository made by Ayda, and tried to get familiar with GitHub with some help from my team members.
+
 ## April 13 - April 19
 I downloaded Android Studio on my computer and tried to understand it. Created an empty project for my experiments and made some changes in its settings.
 
@@ -17,9 +20,9 @@ I downloaded Android Studio on my computer and tried to understand it. Created a
 I watched some videos to learn how to write code to take picture with camera and implement this code to the Android Studio.
 
 ## April 27 - May 3
-I made some research and enrolled an Udemy course which is about the basics of Android Studio.
+I made some research and also enrolled an Udemy course which is about the basics of Android Studio. Watched a little, but trying to finish it as soon as I can.
 
 ## May 4 - May 11
-I have started writed some code of classes and continued to learn from the online course.
+I have started writed some code of classes and continued to learn from the online course. It is a long course but when I finish it, I will have learned much about Android Studio.
 
 
