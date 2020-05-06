@@ -86,7 +86,7 @@ public class Main2Activity extends AppCompatActivity {
 
                // count[0]++;
 
-                Intent intent = new Intent(Main2Activity.this, Camera.class);
+                Intent intent = new Intent(Main2Activity.this, CameraActivity.class);
                 startActivity(intent);
              }
 
