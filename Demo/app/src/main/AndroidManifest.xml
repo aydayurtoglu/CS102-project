@@ -25,7 +25,8 @@
         android:roundIcon="@mipmap/momentum_first_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CameraPreview"></activity>
+        <activity android:name=".AutoImageSlider"></activity>
+        <activity android:name=".CameraPreview" />
         <activity android:name=".HelpPage" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity">
@@ -35,12 +36,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CameraActivity"
+        <activity
+            android:name=".CameraActivity"
             android:label="@string/app_name"
-
             android:screenOrientation="fullSensor">
-            <!-- configure this activity to use landscape orientation -->
 
+            <!-- configure this activity to use landscape orientation -->
 
         </activity>
     </application>
