@@ -20,10 +20,9 @@ import java.util.ArrayList;
 public class Main2Activity extends AppCompatActivity {
 
     private ImageButton buttonHelp;
-    private ImageButton buttonBack;
     private ArrayList<ImageButton> buttons;
     private ImageButton buttonAdd;
-    private SearchView searchView;
+   // private SearchView searchView;
 
     //private LinearLayout layout = (LinearLayout) findViewById (R.id.linearLayout);
 
@@ -35,26 +34,17 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         buttonHelp = findViewById(R.id.helpButton);
-        buttonBack = findViewById(R.id.backButton);
         buttonAdd = findViewById(R.id.addButton);
 
 
         buttons = new ArrayList<ImageButton>();
 
-        searchView = findViewById(R.id.searchView);
+        //searchView = findViewById(R.id.searchView);
 
 //        layout = findViewById (R.id.linearLayout);
 //        final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 //        params.setMargins(20, 10, 20, 10);
 
-
-        buttonBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Main2Activity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
         buttonHelp.setOnClickListener(new View.OnClickListener() {
             @Override

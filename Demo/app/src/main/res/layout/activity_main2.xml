@@ -8,86 +8,61 @@
     tools:context=".Main2Activity">
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="364dp"
-        android:layout_height="305dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="18dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/addButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
     <ImageButton
         android:id="@+id/helpButton"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="170dp"
-        android:layout_marginRight="170dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginLeft="173dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
         android:background="#00FFFFFF"
         android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_help" />
 
     <ImageButton
-        android:id="@+id/backButton"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:background="#CDCDCD"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="@+id/helpButton"
-        app:layout_constraintEnd_toStartOf="@+id/helpButton"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/helpButton"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="?attr/homeAsUpIndicator" />
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="383dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="#EAEAEA"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/helpButton" />
-
-    <ImageButton
         android:id="@+id/addButton"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="152dp"
+        android:layout_height="158dp"
         android:layout_marginStart="170dp"
         android:layout_marginLeft="170dp"
         android:layout_marginEnd="170dp"
         android:layout_marginRight="170dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="248dp"
         android:background="#00FFFFFF"
         android:contentDescription="@android:string/yes"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="163dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginBottom="203dp"
+        android:text="@string/app_name"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="New project" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
