@@ -25,7 +25,7 @@ public class Main2Activity extends AppCompatActivity {
     private ImageButton buttonAdd;
     private SearchView searchView;
 
-    private LinearLayout layout = (LinearLayout) findViewById (R.id.linearLayout);
+    //private LinearLayout layout = (LinearLayout) findViewById (R.id.linearLayout);
 
 
     @SuppressLint("WrongViewCast")
@@ -43,9 +43,9 @@ public class Main2Activity extends AppCompatActivity {
 
         searchView = findViewById(R.id.searchView);
 
-        layout = findViewById (R.id.linearLayout);
-        final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        params.setMargins(20, 10, 20, 10);
+//        layout = findViewById (R.id.linearLayout);
+//        final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+//        params.setMargins(20, 10, 20, 10);
 
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
@@ -86,8 +86,8 @@ public class Main2Activity extends AppCompatActivity {
 
                // count[0]++;
 
-                Intent intent = new Intent(Main2Activity.this, CameraActivity.class);
-                startActivity(intent);
+                 Intent intent = new Intent(Main2Activity.this, CameraActivity.class);
+               startActivity(intent);
              }
 
         });

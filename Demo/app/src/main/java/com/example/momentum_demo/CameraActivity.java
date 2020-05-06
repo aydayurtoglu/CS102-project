@@ -1,5 +1,9 @@
 package com.example.momentum_demo;
 
+/**
+ *This class represents the camera for our app
+ * @author
+ */
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -70,16 +74,7 @@ public class CameraActivity extends Activity {
         return c; // returns null if camera is unavailable
     }
 
-    /** Check if this device has a camera */
-    private boolean checkCameraHardware(Context context) {
-        if (context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY)){
-            // this device has a camera
-            return true;
-        } else {
-            // no camera on this device
-            return false;
-        }
-    }
+
 
     private Camera.PictureCallback mPicture = new Camera.PictureCallback() {
 
