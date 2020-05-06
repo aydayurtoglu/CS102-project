@@ -5,14 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
+import android.hardware.Camera.Parameters;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Display;
+import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.WindowManager;
 
 import java.io.IOException;
 
 import static android.content.ContentValues.TAG;
+import static android.content.Context.WINDOW_SERVICE;
 
 /**
  *A basic Camera preview class
@@ -74,6 +79,11 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         } catch (Exception e){
             // ignore: tried to stop a non-existent preview
         }
+
+        ///////////
+        mCamera.setDisplayOrientation(90);
+        ///////////
+
 
         // set preview size and make any resize, rotate or
         // reformatting changes here
