@@ -62,14 +62,17 @@ Everyone will also continue to learn features of Android Studio.
 ****
 
 ****
-### Meeting ~ (date, duration)
+### Meeting ~ (6th May 2020, one hour)
 ****
 **Present:** All  _**Absent:** None
 
 **Discussion:** 
+We discussed about changing our design to make it simpler than before and shared information about camera, creating a video and storage.
 
 
 **ToDo:** 
+Beste, Ece and Eren will work on the camera. 
+Ata, Ayda and Can will work on storage issues.
 
 ****
 ****
