@@ -33,6 +33,7 @@ import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 
 public class CameraActivity extends Activity {
 
+    private Button proceedButton;
     private Camera mCamera;
     private CameraPreview mPreview;
 
@@ -64,6 +65,15 @@ public class CameraActivity extends Activity {
                 startActivity(intent);
 
                 finish();
+            }
+        });
+
+        proceedButton = findViewById(R.id.proceedButton);
+        proceedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CameraActivity.this, AutoImageSlider.class);
+                startActivity(intent);
             }
         });
     }

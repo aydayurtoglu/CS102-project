@@ -16,13 +16,12 @@ public class AutoImageSlider extends AppCompatActivity {
 
         viewFlipper = findViewById(R.id.viewFlipper);
 
-        int images[] = {R.drawable.logo}; // BUNLARI Bİ YERDEN ALMAMIZ LAZIM
+        int images[] = {R.drawable.logo, R.drawable.logo1}; // BUNLARI Bİ YERDEN ALMAMIZ LAZIM
 
         // for loop
-        for ( int i = 0; i < images.length; i++){
-            flipperImages(images[i]);
+        for (int image : images) {
+            flipperImages(image);
         }
-
     }
 
     public void flipperImages(int image){
@@ -30,11 +29,11 @@ public class AutoImageSlider extends AppCompatActivity {
         imageView.setBackgroundResource(image);
 
         viewFlipper.addView(imageView);
-        viewFlipper.setFlipInterval(1000); // 1 sec
+        viewFlipper.setFlipInterval(100); // 1 sec
         viewFlipper.setAutoStart(true);
 
         //animation
-        viewFlipper.setInAnimation(this, android.R.anim.slide_in_left);
-        viewFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
+        viewFlipper.setInAnimation(this, android.R.anim.fade_in);
+        viewFlipper.setOutAnimation(this, android.R.anim.fade_out);
     }
 }
