@@ -19,7 +19,6 @@ public class Project { //project will be our model
     }
 
     //methods
-
     public void setName(String name) {
         this.name = name;
     }
