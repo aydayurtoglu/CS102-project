@@ -15,6 +15,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,7 @@ import java.io.IOException;
 import java.util.Date;
 
 import static android.content.ContentValues.TAG;
+import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE;
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 
 public class CameraActivity extends Activity {
@@ -37,6 +39,16 @@ public class CameraActivity extends Activity {
     private Camera mCamera;
     private CameraPreview mPreview;
 
+    //Uri uriSavedImage=Uri.fromFile(new File(Environment.getExternalStorageDirectory().getPath()));
+    //mCamera.putExtra(MediaStore.EXTRA_OUTPUT, uriSavedImage);
+    //startActivityForResult(camera, 1);
+
+    //Intent intent2 = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+    //intent2.putExtra(MediaStore.EXTRA_OUTPUT, getOutputMediaFileUri(MEDIA_TYPE_IMAGE));
+    //startActivityForResult(intent2, 0 );
+
+
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +62,9 @@ public class CameraActivity extends Activity {
         FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
         preview.addView(mPreview);
 
+
+
+
         // Add a listener to the Capture button
         Button captureButton = (Button) findViewById(R.id.button_capture);
         captureButton.setOnClickListener(new View.OnClickListener() {
@@ -61,12 +76,15 @@ public class CameraActivity extends Activity {
                 mCamera.release();
                 Log.v(TAG, "will now call finish()");
 
+
+
                 Intent intent = new Intent(CameraActivity.this, CameraActivity.class);
                 startActivity(intent);
 
                 finish();
             }
         });
+
 
         proceedButton = findViewById(R.id.proceedButton);
         proceedButton.setOnClickListener(new View.OnClickListener() {
@@ -76,10 +94,14 @@ public class CameraActivity extends Activity {
                 startActivity(intent);
             }
         });
+
     }
 
     /** A safe way to get an instance of the Camera object. */
     public static Camera getCameraInstance(){
+
+
+
         Camera c = null;
         try {
             c = Camera.open(0); // attempt to get a Camera instance

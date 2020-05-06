@@ -1,5 +1,7 @@
 package com.example.momentum_demo;
 
+
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,6 +13,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
+/* This class makes a share sheet and a peek for created video.
+   @author Can Avsar and Ayda Yurtoglu
+   @version 6 May 2020 (should be changed)
+ */
 public class AutoImageSlider extends AppCompatActivity {
 
     ViewFlipper viewFlipper;
@@ -35,33 +41,33 @@ public class AutoImageSlider extends AppCompatActivity {
         animation.setOneShot(false); //If true, the animation will only run a single time and then stop.
 
 
-        import org.jcodec.api.awt.SequenceEncoder;
-        SequenceEncoder enc = new SequenceEncoder(new File("filename"));
+        //import org.jcodec.api.awt.SequenceEncoder;
+        //SequenceEncoder enc = new SequenceEncoder(new File("filename"));
         // GOP size will be supported in 0.2
         // enc.getEncoder().setKeyInterval(25);
-        for(...) {
-            BufferedImage image = ... // Obtain an image to encode
-            enc.encodeImage(image);
-        }
-        enc.finish();
+       // for(...) {
+          //  BufferedImage image = ... // Obtain an image to encode
+           // enc.encodeImage(image);
+        //}
+       // enc.finish();
 
 
 
 
-        saveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent sendIntent = new Intent();
-                sendIntent.setAction(Intent.ACTION_SEND);
+        //saveButton.setOnClickListener(new View.OnClickListener() {
+           // @Override
+          //  public void onClick(View v) {
+               // Intent sendIntent = new Intent();
+               // sendIntent.setAction(Intent.ACTION_SEND);
                 //sendIntent.putExtra(Intent.EXTRA_, something");
-                sendIntent.setType("video/mp4");
-                Intent shareIntent = Intent.createChooser(sendIntent, null);
-                startActivity(shareIntent);
-            }
-        });
+              //  sendIntent.setType("video/mp4");
+             //   Intent shareIntent = Intent.createChooser(sendIntent, null);
+             //   startActivity(shareIntent);
+           // }
+        //});
 
 
-        int images[] = {R.drawable.logo, R.drawable.logo1}; // BUNLARI Bİ YERDEN ALMAMIZ LAZIM
+        int images[] = {R.drawable.logo, R.drawable.logo1}; //BUNLARI Bİ YERDEN ALMAMIZ LAZIM
 
         // for loop
         for (int image : images) {
