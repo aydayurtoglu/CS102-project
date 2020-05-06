@@ -2,7 +2,8 @@ package com.example.momentum_demo;
 
 /**
  *This class represents the camera for our app
- * @author
+ * @author Beste Guney and Ece Teker
+ * @version 1.0
  */
 import android.app.Activity;
 import android.content.Context;
@@ -78,6 +79,7 @@ public class CameraActivity extends Activity {
 
     private Camera.PictureCallback mPicture = new Camera.PictureCallback() {
 
+        @RequiresApi(api = Build.VERSION_CODES.N)
         @Override
         public void onPictureTaken(byte[] data, Camera camera) {
 
@@ -103,6 +105,7 @@ public class CameraActivity extends Activity {
     public static final int MEDIA_TYPE_VIDEO = 2;
 
     /** Create a file Uri for saving an image or video */
+    @RequiresApi(api = Build.VERSION_CODES.N)
     private static Uri getOutputMediaFileUri(int type){
         return Uri.fromFile(getOutputMediaFile(type));
     }
@@ -113,6 +116,8 @@ public class CameraActivity extends Activity {
         // To be safe, you should check that the SDCard is mounted
         // using Environment.getExternalStorageState() before doing this.
 
+       // File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
+         //       Environment.DIRECTORY_PICTURES), "MyCameraApp");
         File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PICTURES), "MyCameraApp");
         // This location works best if you want the created images to be shared
