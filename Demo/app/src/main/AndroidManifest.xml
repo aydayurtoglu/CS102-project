@@ -19,7 +19,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".CameraPreview"></activity>
-        <activity android:name=".Camera" />
         <activity android:name=".HelpPage" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity">
