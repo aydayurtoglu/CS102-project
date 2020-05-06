@@ -22,8 +22,8 @@ public class Main2Activity extends AppCompatActivity {
     private ImageButton buttonHelp;
     private ArrayList<ImageButton> buttons;
     private ImageButton buttonAdd;
-   // private SearchView searchView;
 
+   // private SearchView searchView;
     //private LinearLayout layout = (LinearLayout) findViewById (R.id.linearLayout);
 
 

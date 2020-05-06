@@ -7,6 +7,7 @@ package com.example.momentum_demo;
  */
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.icu.text.SimpleDateFormat;
@@ -58,6 +59,10 @@ public class CameraActivity extends Activity {
                 Log.v(TAG, "will now release camera");
                 mCamera.release();
                 Log.v(TAG, "will now call finish()");
+
+                Intent intent = new Intent(CameraActivity.this, CameraActivity.class);
+                startActivity(intent);
+
                 finish();
             }
         });
@@ -116,8 +121,6 @@ public class CameraActivity extends Activity {
         // To be safe, you should check that the SDCard is mounted
         // using Environment.getExternalStorageState() before doing this.
 
-       // File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
-         //       Environment.DIRECTORY_PICTURES), "MyCameraApp");
         File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PICTURES), "MyCameraApp");
         // This location works best if you want the created images to be shared
