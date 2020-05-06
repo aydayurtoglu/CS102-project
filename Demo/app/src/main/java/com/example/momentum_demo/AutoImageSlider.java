@@ -40,30 +40,31 @@ public class AutoImageSlider extends AppCompatActivity {
         animation.addFrame(getResources().getDrawable(R.drawable.logo1), 500);
         animation.setOneShot(false); //If true, the animation will only run a single time and then stop.
 
+        // Share Sheet Codes
 
         //import org.jcodec.api.awt.SequenceEncoder;
         //SequenceEncoder enc = new SequenceEncoder(new File("filename"));
         // GOP size will be supported in 0.2
         // enc.getEncoder().setKeyInterval(25);
-       // for(...) {
-          //  BufferedImage image = ... // Obtain an image to encode
-           // enc.encodeImage(image);
+        // for(...) {
+        //  BufferedImage image = ... // Obtain an image to encode
+        // enc.encodeImage(image);
         //}
-       // enc.finish();
+        // enc.finish();
 
 
-
+        //Save Button and OnClickListener
 
         //saveButton.setOnClickListener(new View.OnClickListener() {
-           // @Override
-          //  public void onClick(View v) {
-               // Intent sendIntent = new Intent();
-               // sendIntent.setAction(Intent.ACTION_SEND);
-                //sendIntent.putExtra(Intent.EXTRA_, something");
-              //  sendIntent.setType("video/mp4");
-             //   Intent shareIntent = Intent.createChooser(sendIntent, null);
-             //   startActivity(shareIntent);
-           // }
+        // @Override
+        //  public void onClick(View v) {
+        // Intent sendIntent = new Intent();
+        // sendIntent.setAction(Intent.ACTION_SEND);
+        //sendIntent.putExtra(Intent.EXTRA_, something");
+        //  sendIntent.setType("video/mp4");
+        //   Intent shareIntent = Intent.createChooser(sendIntent, null);
+        //   startActivity(shareIntent);
+        // }
         //});
 
 
