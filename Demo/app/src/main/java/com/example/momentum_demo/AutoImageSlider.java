@@ -16,7 +16,7 @@ public class AutoImageSlider extends AppCompatActivity {
 
         viewFlipper = findViewById(R.id.viewFlipper);
 
-        int images[] = {}; // BUNLARI Bİ YERDEN ALMAMIZ LAZIM
+        int images[] = {R.drawable.logo}; // BUNLARI Bİ YERDEN ALMAMIZ LAZIM
 
         // for loop
         for ( int i = 0; i < images.length; i++){
