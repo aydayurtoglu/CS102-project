@@ -75,5 +75,18 @@ Beste, Ece and Eren will work on the camera.
 Ata, Ayda and Can will work on storage issues.
 
 ****
+
 ****
+### Meeting ~ (7th May 2020, three hours)
+****
+**Present:** All  _**Absent:** None
+
+**Discussion:** 
+We discussed about the way of storing images and transforming them into a .gif or .mp4 file and we worked on these topics.
+
+
+**ToDo:** 
+Everyone will work on solving these problems.
+
+
 
