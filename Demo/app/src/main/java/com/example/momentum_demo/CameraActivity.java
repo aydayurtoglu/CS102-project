@@ -34,6 +34,7 @@ import java.util.Date;
 import static android.content.ContentValues.TAG;
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE;
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
+//import static androidx.constraintlayout.widget.Constraints.TAG;
 
 @RequiresApi(api = Build.VERSION_CODES.N)
 public class CameraActivity extends Activity {
@@ -80,6 +81,18 @@ public class CameraActivity extends Activity {
                Log.v(TAG, "will now call finish()");
                finish();
                // dispatchTakePictureIntent();
+
+                Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                Uri photoURI = null;
+                try {
+                    photoURI = FileProvider.getUriForFile(getApplicationContext(),
+                            "com.example.android.fileprovider",
+                            createImageFile());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO);
 
                Intent intent = new Intent(CameraActivity.this, CameraActivity.class);
                startActivity(intent);
