@@ -73,18 +73,18 @@ public class CameraActivity extends Activity {
         captureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//               Log.v(TAG, "will now take picture");
-//                mCamera.takePicture(null, null, mPicture);
-//                Log.v(TAG, "will now release camera");
-//                mCamera.release();
-//                Log.v(TAG, "will now call finish()");
-
-                dispatchTakePictureIntent();
+               Log.v(TAG, "will now take picture");
+                mCamera.takePicture(null, null, mPicture);
+                Log.v(TAG, "will now release camera");
+                mCamera.release();
+               Log.v(TAG, "will now call finish()");
+               finish();
+               // dispatchTakePictureIntent();
 
                Intent intent = new Intent(CameraActivity.this, CameraActivity.class);
                startActivity(intent);
 
-                finish();
+
 
             }
         });
@@ -119,36 +119,28 @@ public class CameraActivity extends Activity {
 
 
 
- //   private Camera.PictureCallback mPicture = new Camera.PictureCallback()
-//
-//        @RequiresApi(api = Build.VERSION_CODES.N)
-//        @Override
-//        public void onPictureTaken(byte[] data, Camera camera) {
-//
-//            //File pictureFile = getOutputMediaFile(MEDIA_TYPE_IMAGE);
-//            File pictureFile = null;
-//            try {
-//                pictureFile = createImageFile();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//
-//            if (pictureFile == null){
-//                Log.d(TAG, "Error creating media file, check storage permissions");
-//                return;
-//            }
-//
-//            try {
-//                FileOutputStream fos = new FileOutputStream(pictureFile);
-//                fos.write(data);
-//                fos.close();
-//            } catch (FileNotFoundException e) {
-//                Log.d(TAG, "File not found: " + e.getMessage());
-//            } catch (IOException e) {
-//                Log.d(TAG, "Error accessing file: " + e.getMessage());
-//            }
-//        }
-//    };
+    private Camera.PictureCallback mPicture = new Camera.PictureCallback() {
+
+        @Override
+        public void onPictureTaken(byte[] data, Camera camera) {
+
+            File pictureFile = getOutputMediaFile(MEDIA_TYPE_IMAGE);
+            if (pictureFile == null){
+                Log.d(TAG, "Error creating media file, check storage permissions");
+                return;
+            }
+
+            try {
+                FileOutputStream fos = new FileOutputStream(pictureFile);
+                fos.write(data);
+                fos.close();
+            } catch (FileNotFoundException e) {
+                Log.d(TAG, "File not found: " + e.getMessage());
+            } catch (IOException e) {
+                Log.d(TAG, "Error accessing file: " + e.getMessage());
+            }
+        }
+    };
 
         static final int REQUEST_TAKE_PHOTO = 1;
 
@@ -158,8 +150,8 @@ public class CameraActivity extends Activity {
             // Ensure that there's a camera activity to handle the intent
             if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
                 // Create the File where the photo should go
-                File photoFile = null;
-                photoFile = getOutputMediaFile(1);
+                //File photoFile = null;
+                File photoFile = getOutputMediaFile(1);
                 // Continue only if the File was successfully created
                 if (photoFile != null) {
                     Toast toast = Toast.makeText(getApplicationContext(), "This is a message", Toast.LENGTH_SHORT);
@@ -178,11 +170,11 @@ public class CameraActivity extends Activity {
     public static final int MEDIA_TYPE_IMAGE = 1;
     public static final int MEDIA_TYPE_VIDEO = 2;
 
-//    /** Create a file Uri for saving an image or video */
-//    @RequiresApi(api = Build.VERSION_CODES.N)
-//    private static Uri getOutputMediaFileUri(int type){
-//        return Uri.fromFile(getOutputMediaFile(type));
-//    }
+    /** Create a file Uri for saving an image or video */
+    @RequiresApi(api = Build.VERSION_CODES.N)
+    private  Uri getOutputMediaFileUri(int type){
+        return Uri.fromFile(getOutputMediaFile(type));
+    }
 
     /** Create a File for saving an image or video */
    @RequiresApi(api = Build.VERSION_CODES.N)
