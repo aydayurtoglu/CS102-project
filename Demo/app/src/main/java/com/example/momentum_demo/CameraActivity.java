@@ -20,6 +20,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.core.content.FileProvider;
@@ -34,6 +35,7 @@ import static android.content.ContentValues.TAG;
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE;
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 
+@RequiresApi(api = Build.VERSION_CODES.N)
 public class CameraActivity extends Activity {
 
     private Button proceedButton;
@@ -76,13 +78,14 @@ public class CameraActivity extends Activity {
 //                Log.v(TAG, "will now release camera");
 //                mCamera.release();
 //                Log.v(TAG, "will now call finish()");
+
                 dispatchTakePictureIntent();
 
-
-                Intent intent = new Intent(CameraActivity.this, CameraActivity.class);
-                startActivity(intent);
+               Intent intent = new Intent(CameraActivity.this, CameraActivity.class);
+               startActivity(intent);
 
                 finish();
+
             }
         });
 
@@ -93,6 +96,7 @@ public class CameraActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(CameraActivity.this, AutoImageSlider.class);
                 startActivity(intent);
+
             }
         });
 
@@ -155,16 +159,15 @@ public class CameraActivity extends Activity {
             if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
                 // Create the File where the photo should go
                 File photoFile = null;
-                try {
-                    photoFile = createImageFile();
-                } catch (IOException ex) {
-                    // Error occurred while creating the File
-
-                }
+                photoFile = getOutputMediaFile(1);
                 // Continue only if the File was successfully created
                 if (photoFile != null) {
+                    Toast toast = Toast.makeText(getApplicationContext(), "This is a message", Toast.LENGTH_SHORT);
+                    toast.show();
+
+
                     Uri photoURI = FileProvider.getUriForFile(this,
-                            "com.example.android.fileprovider",
+                            "com.example.momentum_demo",
                             photoFile);
                     takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                     startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO);
@@ -182,56 +185,56 @@ public class CameraActivity extends Activity {
 //    }
 
     /** Create a File for saving an image or video */
- //   @RequiresApi(api = Build.VERSION_CODES.N)
-//    private static File getOutputMediaFile(int type){
-//        // To be safe, you should check that the SDCard is mounted
-//        // using Environment.getExternalStorageState() before doing this.
+   @RequiresApi(api = Build.VERSION_CODES.N)
+   private File getOutputMediaFile(int type){
+       // To be safe, you should check that the SDCard is mounted
+       // using Environment.getExternalStorageState() before doing this.
+
+       File mediaStorageDir = new File( getApplicationContext().getExternalFilesDir(Environment.DIRECTORY_PICTURES), "files");
+       // This location works best if you want the created images to be shared
+       // between applications and persist after your app has been uninstalled.
+
+       // Create the storage directory if it does not exist
+       if (! mediaStorageDir.exists()) {
+           if (! mediaStorageDir.mkdirs()){
+                Log.d("files", "failed to create directory");
+               return null;
+           }
+        }
+
+       // Create a media file name
+       String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+       File mediaFile;
+       if (type == MEDIA_TYPE_IMAGE){
+            mediaFile = new File(mediaStorageDir.getPath() + File.separator +
+                   "IMG_"+ timeStamp + ".jpg");
+       } else if(type == MEDIA_TYPE_VIDEO) {
+           mediaFile = new File(mediaStorageDir.getPath() + File.separator +
+                   "VID_"+ timeStamp + ".mp4");
+       } else {
+           return null;
+       }
+
+
+        return mediaFile;
+ }
+
+//    String currentPhotoPath;
 //
-//        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
-//                Environment.DIRECTORY_PICTURES), "MyCameraApp");
-//        // This location works best if you want the created images to be shared
-//        // between applications and persist after your app has been uninstalled.
-//
-//        // Create the storage directory if it does not exist
-//        if (! mediaStorageDir.exists()){
-//            if (! mediaStorageDir.mkdirs()){
-//                Log.d("MyCameraApp", "failed to create directory");
-//                return null;
-//            }
-//        }
-//
-//        // Create a media file name
+//    @RequiresApi(api = Build.VERSION_CODES.N)
+//    private File createImageFile() throws IOException {
+//        // Create an image file name
 //        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-//        File mediaFile;
-//        if (type == MEDIA_TYPE_IMAGE){
-//            mediaFile = new File(mediaStorageDir.getPath() + File.separator +
-//                    "IMG_"+ timeStamp + ".jpg");
-//        } else if(type == MEDIA_TYPE_VIDEO) {
-//            mediaFile = new File(mediaStorageDir.getPath() + File.separator +
-//                    "VID_"+ timeStamp + ".mp4");
-//        } else {
-//            return null;
-//        }
+//        String imageFileName = "JPEG_" + timeStamp + "_";
+//        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+//        File image = File.createTempFile(
+//                imageFileName,  /* prefix */
+//                ".jpg",         /* suffix */
+//                storageDir      /* directory */
+//        );
 //
-//        return mediaFile;
-  //  }
-
-    String currentPhotoPath;
-
-    @RequiresApi(api = Build.VERSION_CODES.N)
-    private File createImageFile() throws IOException {
-        // Create an image file name
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String imageFileName = "JPEG_" + timeStamp + "_";
-        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
-        File image = File.createTempFile(
-                imageFileName,  /* prefix */
-                ".jpg",         /* suffix */
-                storageDir      /* directory */
-        );
-
-        // Save a file: path for use with ACTION_VIEW intents
-        currentPhotoPath = image.getAbsolutePath();
-        return image;
-    }
+//        // Save a file: path for use with ACTION_VIEW intents
+//        currentPhotoPath = image.getAbsolutePath();
+//        return image;
+//    }
 }
