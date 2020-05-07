@@ -26,3 +26,9 @@ I drawed a UML diagram to discuss class hierarchy of our project.
 This week, I searched for libraries that we can use in our project.
 	From websites github and android arsenal
 I searched for how internal storage in applications are used in android.
+
+### 04.04.2020 - 10.04.2020
+This week I and Ece wrote the code of camera. We wrote CameraActivity class and their xml files for it.
+We found the necessary code on the Website "Android Developers". In addition to that, I wrote the 
+paths to save the images that captured in the phone. This way we can extract these pictures to turn into 
+a video.
