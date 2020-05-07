@@ -82,17 +82,17 @@ public class CameraActivity extends Activity {
                finish();
                // dispatchTakePictureIntent();
 
-                Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                Uri photoURI = null;
-                try {
-                    photoURI = FileProvider.getUriForFile(getApplicationContext(),
-                            "com.example.android.fileprovider",
-                            createImageFile());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
-                startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO);
+//                Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//                Uri photoURI = null;
+//                try {
+//                    photoURI = FileProvider.getUriForFile(getApplicationContext(),
+//                            "com.example.android.fileprovider",
+//                            createImageFile());
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+//                startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO);
 
                Intent intent = new Intent(CameraActivity.this, CameraActivity.class);
                startActivity(intent);
