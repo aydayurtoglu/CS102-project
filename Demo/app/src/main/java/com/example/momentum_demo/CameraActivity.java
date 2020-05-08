@@ -83,7 +83,7 @@ public class CameraActivity extends Activity {
 
     public void displayImage(View view)
     {
-        Intent intent = new Intent(this,DisplayImage.class);
+        Intent intent = new Intent(this,ImageGallery.class);
         intent.putExtra("image_path", currentImagePath);
         startActivity(intent);
     }
