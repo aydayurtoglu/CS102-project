@@ -9,6 +9,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Build;
@@ -19,6 +21,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
@@ -41,7 +44,9 @@ public class CameraActivity extends Activity {
 
     String currentImagePath = null;
     private static final int IMAGE_REQUEST = 1;
+
     private Button captureButton;
+    File imageFile;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
@@ -64,7 +69,7 @@ public class CameraActivity extends Activity {
 
         if (cameraIntent.resolveActivity(getPackageManager()) != null)
         {
-            File imageFile = null;
+             imageFile = null;
 
             try {
                 imageFile = getImageFile();
@@ -99,4 +104,20 @@ public class CameraActivity extends Activity {
         return imageFile;
 
     }
+
+//    @Override
+//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        if (requestCode == IMAGE_REQUEST) {
+//            if (resultCode == RESULT_OK) {
+//                // by this point we have the camera photo on disk
+//                Bitmap takenImage = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
+//                // RESIZE BITMAP, see section below
+//                // Load the taken image into a preview
+//                ImageView ivPreview = (ImageView) findViewById(R.id.mimageView);
+//                ivPreview.setImageBitmap(takenImage);
+//            } else { // Result was a failure
+//                Toast.makeText(this, "Picture wasn't taken!", Toast.LENGTH_SHORT).show();
+//            }
+//        }
+//    }
 }
