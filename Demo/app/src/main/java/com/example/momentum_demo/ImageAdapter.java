@@ -15,7 +15,7 @@ import android.widget.ImageView;
 public class ImageAdapter extends BaseAdapter {
 
     private Context mContext;
-    public int[] imageArray = { R.drawable.logo, R.drawable.logo1};
+    public int[] imageArray = { R.drawable.logo, R.drawable.logo1}; // buraya çektiğimiz resimleri koymamız lazım
 
     public ImageAdapter(Context mContext){
         this.mContext = mContext;

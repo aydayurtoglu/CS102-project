@@ -13,15 +13,13 @@ import android.widget.ImageView;
 public class FullscreenActivity extends AppCompatActivity {
 
     ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fullscreen);
 
         imageView = (ImageView) findViewById(R.id.image_view);
-
-        getSupportActionBar().hide();
-        getSupportActionBar().setTitle("Full Screen Image");
 
         Intent i = getIntent();
 

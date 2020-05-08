@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.GridView;
 
 /**
@@ -15,6 +16,7 @@ import android.widget.GridView;
  */
 public class ImageGallery extends AppCompatActivity {
 
+    Button proceedButton;
     GridView gridView;
 
     @Override
@@ -34,5 +36,17 @@ public class ImageGallery extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        proceedButton = findViewById(R.id.proceedbutton);
+
+        proceedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ImageGallery.this, AutoImageSlider.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
