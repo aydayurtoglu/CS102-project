@@ -33,5 +33,17 @@ Can and I worked on the same activities today but we realised that we need
 to know databases to construct our app. So we will have a meeting tomorrow to make our
 design easier.
 
+### ~ 6th May 2020 ~
+I worked on the design of the activities and discovered a class called
+ViewFlipper. I created an AutoImageSlider class. Although ViewFlipper 
+is a layout and not a file that can be saved, I could make animations 
+with it. Can and I did further research on we can save the animation 
+as a file.
+
+### ~ 7th May 2020 ~
+I researched on how we can store the photos taken by the camera with
+Beste and Ece. We couldn't fix the error together. We tried different
+libraries we found on the internet.
+
 
 ****
