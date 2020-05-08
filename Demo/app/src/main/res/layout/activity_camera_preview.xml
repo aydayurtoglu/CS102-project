@@ -1,28 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#000000"
     tools:context=".CameraActivity">
 
     <Button
-        android:id="@+id/captureButton1"
-        android:layout_width="250dp"
+        android:id="@+id/button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
-        android:text="Capture iamge"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="55dp"
-        ></Button>
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="259dp"
+        android:onClick="displayImage"
+        android:text="display image"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captureButton1"></Button>
 
     <Button
-        android:layout_width="250dp"
+        android:id="@+id/captureButton1"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="display iamge"
-        android:onClick="displayImage"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="55dp"
-        ></Button>
+        android:layout_marginTop="236dp"
+        android:layout_marginBottom="56dp"
+        android:text="Capture image"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
