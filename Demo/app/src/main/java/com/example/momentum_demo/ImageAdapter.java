@@ -14,12 +14,17 @@ import android.widget.ImageView;
  */
 public class ImageAdapter extends BaseAdapter {
 
+    ImageView imageView;
     private Context mContext;
-    public int[] imageArray = { R.drawable.logo, R.drawable.logo1}; // buraya çektiğimiz resimleri koymamız lazım
+    public int[] imageArray = { R.drawable.logo, R.drawable.logo1, R.drawable.logo, R.drawable.logo1,
+            R.drawable.logo, R.drawable.logo1, R.drawable.logo, R.drawable.logo1, R.drawable.logo,
+            R.drawable.logo1}; // buraya çektiğimiz resimleri koymamız lazım
 
     public ImageAdapter(Context mContext){
         this.mContext = mContext;
     }
+
+
 
     @Override
     public int getCount() {
