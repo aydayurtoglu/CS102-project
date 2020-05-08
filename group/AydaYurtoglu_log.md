@@ -45,5 +45,10 @@ I researched on how we can store the photos taken by the camera with
 Beste and Ece. We couldn't fix the error together. We tried different
 libraries we found on the internet.
 
+### ~ 8th May 2020 ~
+I created ImageAdapter class, Fullscreen Activity and ImageGallery Activity.
+The image gallery is now working. I did research on how we can get images
+from our file and put it in an int array (which is a property of ImageAdapter)
+so that we can use it to portray that image in full screen.
 
 ****
