@@ -99,8 +99,8 @@ public class CameraActivity extends Activity {
     private File getImageFile() throws IOException
     {
 
-        String timeStamp = new SimpleDateFormat( "pic" +count ).format(new Date());
-        String imageName = "jpg" + timeStamp + "_";
+        //String timeStamp = new SimpleDateFormat( "pic" +count ).format(new Date());
+        String imageName = "pic" + count + "_";
         File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
 
         File imageFile = File.createTempFile(imageName, ".jpg", storageDir);
