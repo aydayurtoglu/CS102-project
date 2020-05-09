@@ -21,10 +21,8 @@ import android.widget.ImageView;
 public class ImageAdapter<imageArray> extends BaseAdapter {
 
     private Context mContext;
-    public int[] imageArray = { R.drawable.logo, R.drawable.logo1, R.drawable.logo, R.drawable.logo1,
-            R.drawable.logo, R.drawable.logo1, R.drawable.logo, R.drawable.logo1, R.drawable.logo,
-            R.drawable.logo1}; // buraya çektiğimiz resimleri koymamız lazım
-    
+    public int[] imageArray; // buraya çektiğimiz resimleri koymamız lazım
+
     //int rh= this.getResources().getIdentifier("ic_launcher", "drawable", this.getPackageName());
 
     public ImageAdapter(Context mContext){
@@ -32,10 +30,10 @@ public class ImageAdapter<imageArray> extends BaseAdapter {
         this.mContext = mContext;
         Resources res = mContext.getResources();
 
-        //int[] drawables = new int[N];
-        //for ( int i = 1; i < N; i++) {
-        //    drawables[i] = res.getIdentifier("pic"+i, "drawable", "Android/data/com.example.momentum_demo/files/Pictures");
-       // }
+        int N = 2;
+        for ( int i = 0; i < N; i++) {
+            imageArray[i] = res.getIdentifier("pic"+ i, "drawable", "Android/data/com.example.momentum_demo/files/Pictures");
+        }
     }
 
     @Override

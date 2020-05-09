@@ -113,6 +113,10 @@ public class CameraActivity extends Activity {
         count++;
     }
 
+    public int getCount() {
+        return count;
+    }
+
 //    @Override
 //    public void onActivityResult(int requestCode, int resultCode, Intent data) {
 //        if (requestCode == IMAGE_REQUEST) {
