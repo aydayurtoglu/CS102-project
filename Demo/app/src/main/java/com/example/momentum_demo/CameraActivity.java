@@ -47,6 +47,7 @@ public class CameraActivity extends Activity {
 
     private Button captureButton;
     File imageFile;
+    int count;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
@@ -62,6 +63,7 @@ public class CameraActivity extends Activity {
             }
         });
 
+        count = 0;
     }
     public void captureImage(View view)
     {
@@ -79,9 +81,11 @@ public class CameraActivity extends Activity {
 
             if (imageFile != null)
             {
+                increaseCount();
                 Uri imageUri = FileProvider.getUriForFile(this,"com.example.momentum_demo",imageFile);
                 cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);
                 startActivityForResult(cameraIntent,IMAGE_REQUEST);
+
             }
         }
     }
@@ -95,7 +99,7 @@ public class CameraActivity extends Activity {
     private File getImageFile() throws IOException
     {
 
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String timeStamp = new SimpleDateFormat( "pic" +count ).format(new Date());
         String imageName = "jpg" + timeStamp + "_";
         File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
 
@@ -103,6 +107,10 @@ public class CameraActivity extends Activity {
         currentImagePath = imageFile.getAbsolutePath();
         return imageFile;
 
+    }
+
+    public void increaseCount() {
+        count++;
     }
 
 //    @Override
