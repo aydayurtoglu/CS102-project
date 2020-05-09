@@ -24,7 +24,8 @@ public class ImageAdapter<imageArray> extends BaseAdapter {
     public int[] imageArray = { R.drawable.logo, R.drawable.logo1, R.drawable.logo, R.drawable.logo1,
             R.drawable.logo, R.drawable.logo1, R.drawable.logo, R.drawable.logo1, R.drawable.logo,
             R.drawable.logo1}; // buraya çektiğimiz resimleri koymamız lazım
-
+    
+    //int rh= this.getResources().getIdentifier("ic_launcher", "drawable", this.getPackageName());
 
     public ImageAdapter(Context mContext){
 
