@@ -51,4 +51,9 @@ The image gallery is now working. I did research on how we can get images
 from our file and put it in an int array (which is a property of ImageAdapter)
 so that we can use it to portray that image in full screen.
 
+### ~ 9th May 2020 ~
+I worked together with Ata, Can and Ece to get images in our file and put them
+in an int array. We discovered how we can change the name of the picture files
+and plan to use this to identify the images in the file.
+
 ****
