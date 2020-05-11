@@ -58,6 +58,8 @@ public class ImageGallery extends AppCompatActivity {
 
 
     }
+
+
 //    // PICK_PHOTO_CODE is a constant integer
 //    public final static int PICK_PHOTO_CODE = 1046;
 //
