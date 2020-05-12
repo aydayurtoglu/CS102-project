@@ -88,5 +88,18 @@ We discussed about the way of storing images and transforming them into a .gif o
 **ToDo:** 
 Everyone will work on solving these problems.
 
+****
+### Meeting ~ (12th May 2020, half an hour)
+****
+**Present:** All  _**Absent:** None
+
+**Discussion:** 
+We discussed about the progress of our project and a major problem about external storage and gallery view of it.
+
+
+**ToDo:** 
+Everyone will work on solving this problem.
+
+
 
 
