@@ -20,4 +20,8 @@ I learned how to insert camera into the app and use the view.
 Beste and I brainstormed ideas on how to add all the taken views to an ArrayList and use them.
 I wrote the help page for the app.
 
+### ~ 10th May 2020 ~ 
+Beste and I wrote the camera code.
+All of our group members tried to find how to use the pictures we saved into the internal storage.
+We did a group meeting with our TA.
 ****
