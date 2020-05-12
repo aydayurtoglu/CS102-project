@@ -19,12 +19,12 @@ _Include a concise description of your project here. Be sure to include the prop
 
 [Group Meetings Log](group/meetingslog.md)
 #### Group Members
-- [member1](group/AydaYurtoglu_log.md)
-- [member2](group/BesteGüney_log.md)
-- [member3](group/EceTeker_log.md)
-- [member4](group/AtaSeren_log.md)
-- [member5](group/CanAvsar_log.md)
-- [member6](group/ErenPolat_log.md)
+- [Ayda Yurtoğlu](group/AydaYurtoglu_log.md)
+- [Beste Güney](group/BesteGüney_log.md)
+- [Ece Teker](group/EceTeker_log.md)
+- [Ata Seren](group/AtaSeren_log.md)
+- [Can Avşar](group/CanAvsar_log.md)
+- [Eren Polat](group/ErenPolat_log.md)
 
 ****
 **Instructor:** David Davenport   **TA:**  Sevil Çalışkan
