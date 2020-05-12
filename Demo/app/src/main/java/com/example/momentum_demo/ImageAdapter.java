@@ -1,12 +1,7 @@
 package com.example.momentum_demo;
 
 import android.content.Context;
-import android.content.pm.ApplicationInfo;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -21,7 +16,9 @@ import android.widget.ImageView;
 public class ImageAdapter<imageArray> extends BaseAdapter {
 
     private Context mContext;
-    public int[] imageArray; // buraya çektiğimiz resimleri koymamız lazım
+    public int[] imageArray = { R.drawable.logo, R.drawable.logo1, R.drawable.logo, R.drawable.logo1,
+            R.drawable.logo, R.drawable.logo1, R.drawable.logo, R.drawable.logo1, R.drawable.logo,
+            R.drawable.logo1}; // buraya çektiğimiz resimleri koymamız lazım
 
     //int rh= this.getResources().getIdentifier("ic_launcher", "drawable", this.getPackageName());
 
@@ -30,10 +27,10 @@ public class ImageAdapter<imageArray> extends BaseAdapter {
         this.mContext = mContext;
         Resources res = mContext.getResources();
 
-        int N = 2;
-        for ( int i = 0; i < N; i++) {
-            imageArray[i] = res.getIdentifier("pic"+ i, "drawable", "Android/data/com.example.momentum_demo/files/Pictures");
-        }
+        //int N = 2;
+        //for ( int i = 0; i < N; i++) {
+         //   imageArray[i] = res.getIdentifier("pic"+ i, "drawable", "Android/data/com.example.momentum_demo/files/Pictures");
+        //}
     }
 
     @Override
