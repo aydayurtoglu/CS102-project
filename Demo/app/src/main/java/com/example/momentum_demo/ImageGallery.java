@@ -34,6 +34,9 @@ public class ImageGallery extends AppCompatActivity {
 
         gridView.setAdapter( new ImageAdapter( this));
 
+
+
+
         gridView.setOnItemClickListener( new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -55,6 +58,8 @@ public class ImageGallery extends AppCompatActivity {
 
 
     }
+
+
 //    // PICK_PHOTO_CODE is a constant integer
 //    public final static int PICK_PHOTO_CODE = 1046;
 //
