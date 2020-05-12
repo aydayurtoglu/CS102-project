@@ -42,12 +42,12 @@ import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 @RequiresApi(api = Build.VERSION_CODES.N)
 public class CameraActivity extends Activity {
 
-    String currentImagePath = null;
+    private String currentImagePath = null;
     private static final int IMAGE_REQUEST = 1;
 
     private Button captureButton;
-    File imageFile;
-    int count;
+    private File imageFile;
+    private int count;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override

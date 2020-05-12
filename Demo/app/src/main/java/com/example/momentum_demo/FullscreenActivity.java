@@ -13,6 +13,7 @@ import android.widget.ImageView;
 public class FullscreenActivity extends AppCompatActivity {
 
     ImageView imageView;
+    ImageAdapter imageAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class FullscreenActivity extends AppCompatActivity {
 
         int position = i.getExtras().getInt("id");
 
-        ImageAdapter imageAdapter = new ImageAdapter(this);
+        imageAdapter = new ImageAdapter(this);
 
         imageView.setImageResource(imageAdapter.imageArray[position]);
 
