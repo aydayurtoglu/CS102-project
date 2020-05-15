@@ -24,4 +24,8 @@ I wrote the help page for the app.
 Beste and I wrote the camera code.
 All of our group members tried to find how to use the pictures we saved into the internal storage.
 We did a group meeting with our TA.
+
+### ~ 15th May 2020 ~ 
+I tried to use Firebase data storage to store our taken images.
+Beste and I wrote a code/page to open up the device Gallery so the user can pick their desired pictures.
 ****
