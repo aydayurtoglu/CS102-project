@@ -25,7 +25,8 @@
         android:roundIcon="@mipmap/momentum_first_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FullscreenActivity"></activity>
+        <activity android:name=".DrawActivity"></activity>
+        <activity android:name=".FullscreenActivity" />
         <activity android:name=".ImageGallery" />
         <activity android:name=".DisplayImage" />
         <activity android:name=".AutoImageSlider" />
