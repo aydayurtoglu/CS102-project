@@ -58,6 +58,7 @@ and plan to use this to identify the images in the file.
 
 ### ~ 16th May 2020 ~
 I worked with Can and adjusted AutoImageSlider class so that the user can 
-change the speed of their animation. 
+change the speed of their animation. I also adjusted the layout of some activities
+and changed the color of backgrounds and some texts.
 
 ****
