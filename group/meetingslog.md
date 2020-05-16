@@ -94,11 +94,12 @@ Everyone will work on solving these problems.
 **Present:** All  _**Absent:** None
 
 **Discussion:** 
-We discussed about the progress of our project and a major problem about external storage and gallery view of it.
+We discussed about the progress of our project and a major problem about internal storage and gallery view of it.
 
 
 **ToDo:** 
-Everyone will work on solving this problem.
+Beste and Ece will work on taking images from our internal storage. Ayda and Can will work on adjusting the speed of the animation.
+Eren and Ata will work on adding a drawing feature to FullscreenActivity.
 
 
 
