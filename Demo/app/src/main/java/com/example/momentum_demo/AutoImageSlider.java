@@ -21,9 +21,10 @@ public class AutoImageSlider extends AppCompatActivity {
 
     //private ViewFlipper viewFlipper;
     private AnimationDrawable animation;
-    private ImageView imageanim = findViewById(R.id.imageanim);
-    private Button buttonFast = findViewById(R.id.saveButtonFast);
-    private Button buttonSlow = findViewById(R.id.saveButtonSlow);
+    private ImageView imageanim;
+    private Button buttonFast;
+    private Button buttonSlow;
+    private int[] imageArray = {R.drawable.logo1, R.drawable.logo, R.drawable.logo1, R.drawable.logo};
     private int dur = 300;
 
     @Override
@@ -34,12 +35,15 @@ public class AutoImageSlider extends AppCompatActivity {
         //viewFlipper = findViewById(R.id.viewFlipper);
         //saveButton = findViewById(R.id.saveButton);
 
+        imageanim = findViewById(R.id.imageanim);
+        buttonFast = findViewById(R.id.saveButtonFast);
+        buttonSlow = findViewById(R.id.saveButtonSlow);
+
 
         animation = new AnimationDrawable();
-        animation.addFrame(getResources().getDrawable(R.drawable.logo), dur);
-        animation.addFrame(getResources().getDrawable(R.drawable.logo1), dur);
-        animation.addFrame(getResources().getDrawable(R.drawable.logo), dur);
-        animation.addFrame(getResources().getDrawable(R.drawable.logo1), dur);
+        for ( int i = 0; i < imageArray.length; i++) {
+            animation.addFrame(getResources().getDrawable(imageArray[i]), dur);
+        }
         animation.setOneShot(true); //If true, the animation will only run a single time and then stop.
         imageanim.setImageDrawable(animation);
         animation.start();
@@ -62,14 +66,13 @@ public class AutoImageSlider extends AppCompatActivity {
         imageanim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //animation = new AnimationDrawable();
-                animation.addFrame(getResources().getDrawable(R.drawable.logo), dur);
-                animation.addFrame(getResources().getDrawable(R.drawable.logo1), dur);
-                animation.addFrame(getResources().getDrawable(R.drawable.logo), dur);
-                animation.addFrame(getResources().getDrawable(R.drawable.logo1), dur);
+                animation = new AnimationDrawable();
+                for ( int i = 0; i < imageArray.length; i++) {
+                    animation.addFrame(getResources().getDrawable(imageArray[i]), dur);
+                }
                 animation.setOneShot(true); //If true, the animation will only run a single time and then stop.
-                //imageanim.setImageDrawable(animation);
-                animation.start();
+                imageanim.setImageDrawable(animation);
+               animation.start();
             }
         });
 
