@@ -56,4 +56,8 @@ I worked together with Ata, Can and Ece to get images in our file and put them
 in an int array. We discovered how we can change the name of the picture files
 and plan to use this to identify the images in the file.
 
+### ~ 16th May 2020 ~
+I worked with Can and adjusted AutoImageSlider class so that the user can 
+change the speed of their animation. 
+
 ****
