@@ -19,73 +19,94 @@ import android.widget.ViewFlipper;
  */
 public class AutoImageSlider extends AppCompatActivity {
 
-    ViewFlipper viewFlipper;
-    Button saveButton;
-    //boolean shareBody;
-    //boolean shareSub;
-    AnimationDrawable animation;
-
+    //private ViewFlipper viewFlipper;
+    private AnimationDrawable animation;
+    private ImageView imageanim = findViewById(R.id.imageanim);
+    private Button buttonFast = findViewById(R.id.saveButtonFast);
+    private Button buttonSlow = findViewById(R.id.saveButtonSlow);
+    private int dur = 300;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auto_image_slider);
 
-        viewFlipper = findViewById(R.id.viewFlipper);
-        saveButton = findViewById(R.id.saveButton);
+        //viewFlipper = findViewById(R.id.viewFlipper);
+        //saveButton = findViewById(R.id.saveButton);
 
 
         animation = new AnimationDrawable();
-        animation.addFrame(getResources().getDrawable(R.drawable.logo), 500);
-        animation.addFrame(getResources().getDrawable(R.drawable.logo1), 500);
-        animation.setOneShot(false); //If true, the animation will only run a single time and then stop.
-
-        // Share Sheet Codes
-
-        //import org.jcodec.api.awt.SequenceEncoder;
-        //SequenceEncoder enc = new SequenceEncoder(new File("filename"));
-        // GOP size will be supported in 0.2
-        // enc.getEncoder().setKeyInterval(25);
-        // for(...) {
-        //  BufferedImage image = ... // Obtain an image to encode
-        // enc.encodeImage(image);
-        //}
-        // enc.finish();
+        animation.addFrame(getResources().getDrawable(R.drawable.logo), dur);
+        animation.addFrame(getResources().getDrawable(R.drawable.logo1), dur);
+        animation.addFrame(getResources().getDrawable(R.drawable.logo), dur);
+        animation.addFrame(getResources().getDrawable(R.drawable.logo1), dur);
+        animation.setOneShot(true); //If true, the animation will only run a single time and then stop.
+        imageanim.setImageDrawable(animation);
+        animation.start();
 
 
-        //Save Button and OnClickListener
+        buttonFast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dur = dur - 50;
+            }
+        });
 
-        //saveButton.setOnClickListener(new View.OnClickListener() {
-        // @Override
-        //  public void onClick(View v) {
-        // Intent sendIntent = new Intent();
-        // sendIntent.setAction(Intent.ACTION_SEND);
-        //sendIntent.putExtra(Intent.EXTRA_, something");
-        //  sendIntent.setType("video/mp4");
-        //   Intent shareIntent = Intent.createChooser(sendIntent, null);
-        //   startActivity(shareIntent);
-        // }
-        //});
+        buttonSlow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dur = dur + 50;
+            }
+        });
+
+        imageanim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //animation = new AnimationDrawable();
+                animation.addFrame(getResources().getDrawable(R.drawable.logo), dur);
+                animation.addFrame(getResources().getDrawable(R.drawable.logo1), dur);
+                animation.addFrame(getResources().getDrawable(R.drawable.logo), dur);
+                animation.addFrame(getResources().getDrawable(R.drawable.logo1), dur);
+                animation.setOneShot(true); //If true, the animation will only run a single time and then stop.
+                //imageanim.setImageDrawable(animation);
+                animation.start();
+            }
+        });
 
 
-        int images[] = {R.drawable.logo, R.drawable.logo1}; //BUNLARI Bİ YERDEN ALMAMIZ LAZIM
+        //int images[] = {R.drawable.logo, R.drawable.logo1}; //BUNLARI Bİ YERDEN ALMAMIZ LAZIM
 
         // for loop
-        for (int image : images) {
-            flipperImages(image);
-        }
+        //for (int image : images) {
+        //   flipperImages(image);
+        //}
     }
 
-    public void flipperImages(int image){
-        ImageView imageView = new ImageView(this);
-        imageView.setBackgroundResource(image);
+    //public void flipperImages(int image){
+    // ImageView imageView = new ImageView(this);
+    //  imageView.setBackgroundResource(image);
 
-        viewFlipper.addView(imageView);
-        viewFlipper.setFlipInterval(100); // 1 sec
-        viewFlipper.setAutoStart(true);
+    //   viewFlipper.addView(imageView);
+    //  viewFlipper.setFlipInterval(100); // 1 sec
+    //  viewFlipper.setAutoStart(true);
 
-        //animation
-        viewFlipper.setInAnimation(this, android.R.anim.fade_in);
-        viewFlipper.setOutAnimation(this, android.R.anim.fade_out);
-    }
+    //animation
+    //  viewFlipper.setInAnimation(this, android.R.anim.fade_in);
+    //   viewFlipper.setOutAnimation(this, android.R.anim.fade_out);
+    //}
+
+
+    //Save Button and OnClickListener
+    //saveButton.setOnClickListener(new View.OnClickListener() {
+    // @Override
+    //  public void onClick(View v) {
+    // Intent sendIntent = new Intent();
+    // sendIntent.setAction(Intent.ACTION_SEND);
+    //sendIntent.putExtra(Intent.EXTRA_, something");
+    //  sendIntent.setType("video/mp4");
+    //   Intent shareIntent = Intent.createChooser(sendIntent, null);
+    //   startActivity(shareIntent);
+    // }
+    //});
+
 }

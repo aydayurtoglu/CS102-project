@@ -7,30 +7,55 @@
     android:background="#000000"
     tools:context=".AutoImageSlider">
 
-    <ViewFlipper
-        android:id="@+id/viewFlipper"
-        android:layout_width="wrap_content"
-        android:layout_height="600dp"
-        android:layout_marginBottom="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/saveButton"
+        android:id="@+id/saveButtonFast"
+        style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="135dp"
         android:layout_marginLeft="135dp"
         android:layout_marginTop="607dp"
+        android:layout_marginBottom="3dp"
+        android:text="PLAY FAST"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/saveButtonSlow"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="607dp"
         android:layout_marginEnd="135dp"
         android:layout_marginRight="135dp"
         android:layout_marginBottom="3dp"
-        android:text="SAVE ANIMATION"
+        android:text="PLAY SLOW"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageanim"
+        android:layout_width="389dp"
+        android:layout_height="574dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveButtonFast"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        style="?android:attr/buttonBarButtonStyle"/>
+        app:srcCompat="@drawable/logo" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
