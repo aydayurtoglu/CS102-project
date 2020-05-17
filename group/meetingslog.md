@@ -102,6 +102,20 @@ We also discussed our UML diagram since it changed as we wrote the code and crea
 Beste and Ece will work on taking images from our internal storage. Ayda and Can will work on adjusting the speed of the animation.
 Eren and Ata will work on adding a drawing feature to FullscreenActivity.
 
+****
+### Meeting ~ (17th May 2020, an hour)
+****
+**Present:** All  _**Absent:** None
+
+**Discussion:** 
+We discuused about features we added such as drawing on an image and changing speed and duration of animation.
+
+
+**ToDo:** 
+Beste and Ece will work on storage issues.
+Ayda and Can will work on adding more features to app.
+Eren and Ata will improve DrawActivity class.
+
 
 
 

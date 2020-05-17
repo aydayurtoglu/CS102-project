@@ -16,6 +16,15 @@ After the meeting and brainstorming, I started to think and work on my project a
 
 ### ~ 3rd May 2020 ~
 I completed half of the Android Studio class that I took from Udemy. I will further do a research about adding camera to app and work on design and code of some of the classes.
+ 
+### ~ 7th May 2020 ~
+I learned every useful feature of Android Studio from Udemy class. I contributed my friends' codes and designs by doing researches about our major issues about app and making changes on the code.
+
+### ~ 12th May 2020 ~
+I continued to research about our major issues such as storage and creating animation.
+
+### ~ 16th May 2020 ~
+Eren and I wrote the DrawActivity code which allows us to draw on images and connected it to other parts of the code. We will improve the features of this activity such as adding new colors and brush sizes.
 
 
 ****
