@@ -52,14 +52,18 @@ public class AutoImageSlider extends AppCompatActivity {
         buttonFast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dur = dur - 50;
+                if ( dur > 50 ) {
+                    dur = dur - 50;
+                }
             }
         });
 
         buttonSlow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dur = dur + 50;
+                if ( dur < 600) {
+                    dur = dur + 50;
+                }
             }
         });
 

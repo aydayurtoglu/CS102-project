@@ -46,7 +46,6 @@ public class DrawActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw);
 
-        btnLoadImage = (Button)findViewById(R.id.loadimage);
         btnSaveImage = (Button)findViewById(R.id.saveimage);
         imageResult = (ImageView)findViewById(R.id.result);
 
