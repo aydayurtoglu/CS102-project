@@ -8,14 +8,14 @@
     android:padding="16dp"
     tools:context="com.example.momentum_demo.DrawActivity">
 
-    <Button
-        android:id="@+id/loadimage"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#000000"
-        android:text="Load Image"
-        android:textColor="#2196F3"
-        android:textSize="24sp" />
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@android:color/black"
+        android:scaleType="centerInside" />
 
     <Button
         android:id="@+id/saveimage"
@@ -25,13 +25,4 @@
         android:text="Save Image"
         android:textColor="#2196F3"
         android:textSize="24sp" />
-
-    <ImageView
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:adjustViewBounds="true"
-        android:background="@android:color/black"
-        android:scaleType="centerInside" />
 </LinearLayout>
