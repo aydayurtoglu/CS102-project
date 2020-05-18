@@ -14,10 +14,16 @@ import androidx.appcompat.app.AppCompatActivity;
  */
 public class FullscreenActivity extends AppCompatActivity {
 
-    ImageView imageView;
-    ImageAdapter imageAdapter;
-    Button draw;
+    //variables
+    private ImageView imageView;
+    private ImageAdapter imageAdapter;
+    private Button draw;
 
+    //methods
+
+    /*
+    This method creates the page which shows the images in the array
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +42,7 @@ public class FullscreenActivity extends AppCompatActivity {
             }
         });
 
-        imageView = (ImageView) findViewById(R.id.image_view);
+        imageView = (ImageView) findViewById(R.id.image_view); //matching variable with its xml view
 
         Intent i = getIntent();
 

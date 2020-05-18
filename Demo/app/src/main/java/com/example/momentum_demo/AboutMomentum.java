@@ -4,13 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 /**
- * AboutMomentum class
+ * AboutMomentum is the page which explains the application to the user
  * @author Can Avsar
  * @version 1.0
  */
 
 public class AboutMomentum extends AppCompatActivity {
 
+    //methods
+
+    /*
+    This method creates the about momentum page
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,9 +1,5 @@
 package com.example.momentum_demo;
-/**
- * DrawActivity class (drawing shit) """NEAT"""
- * @author Ata Seren, Eren Polat
- * @version 1.0
- */
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -18,34 +14,42 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/**
+ * DrawActivity class (drawing shit) """NEAT"""
+ * @author Ata Seren, Eren Polat
+ * @version 1.0
+ */
 public class DrawActivity extends AppCompatActivity {
 
-    Button btnGallery, btnSaveImage;
-    ImageView imageResult;
+    //constants
+    public final int RQS_IMAGE1 = 1;
 
-    final int RQS_IMAGE1 = 1;
+    //variables
+    private Button btnGallery, btnSaveImage;
+    private ImageView imageResult;
+    private Uri source;
+    private Bitmap bitmapMaster;
+    private Canvas canvasMaster;
+    private int prvX, prvY;
+    private  Paint paintDraw;
 
-    Uri source;
-    Bitmap bitmapMaster;
-    Canvas canvasMaster;
+    //methods
 
-    int prvX, prvY;
-
-    Paint paintDraw;
-
+    /*
+    This method initialises the properties for drawing activity
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw);
 
+        //matching the variables with their xml view
         btnGallery = findViewById(R.id.gallery);
         btnSaveImage = findViewById(R.id.saveimage);
         imageResult = findViewById(R.id.result);
@@ -56,6 +60,7 @@ public class DrawActivity extends AppCompatActivity {
         paintDraw.setStrokeWidth(10);
         saveImageView();
 
+        //adding actionListener to the button
         btnGallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,6 +70,7 @@ public class DrawActivity extends AppCompatActivity {
             }
         });
 
+        //adding actionListener to the button
         btnSaveImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +80,7 @@ public class DrawActivity extends AppCompatActivity {
             }
         });
 
+        //adding actionListener to the image to draw by touch
         imageResult.setOnTouchListener(new View.OnTouchListener() {
 
             @Override
@@ -108,7 +115,7 @@ public class DrawActivity extends AppCompatActivity {
     }
 
     /*
-    Project position on ImageView to position on Bitmap draw on it
+    This method shows the project position on ImageView to position on Bitmap draw on it
      */
 
     private void drawOnProjectedBitMap(ImageView iv, Bitmap bm,
@@ -132,13 +139,20 @@ public class DrawActivity extends AppCompatActivity {
     }
 
 
+    /*
+    This method saves the view of the bitmap
+     */
     protected void saveImageView() {
 
+        //variables
         Bitmap tempBitmap;
-        ImageAdapter imageAdapter = new ImageAdapter(this);
+        ImageAdapter imageAdapter;
         Intent i = getIntent();
-        int position = i.getExtras().getInt("id");
+        int position;
 
+        //programme code
+        imageAdapter = new ImageAdapter(this);
+        position = i.getExtras().getInt("id");
 
         //tempBitmap is Immutable bitmap,
         //cannot be passed to Canvas constructor
@@ -164,6 +178,9 @@ public class DrawActivity extends AppCompatActivity {
 
     }
 
+    /*
+    This method saves the bitmap
+     */
     private void saveBitmap(Bitmap bm){
         File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
         File newFile = new File(storageDir, "test.jpg");

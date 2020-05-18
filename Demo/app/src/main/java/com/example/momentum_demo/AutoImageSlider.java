@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
  */
 public class AutoImageSlider extends AppCompatActivity {
 
-    //properties
+    //variables
     private AnimationDrawable animation;
     private ImageView imageanim;
     private Button buttonFast;
@@ -32,22 +32,20 @@ public class AutoImageSlider extends AppCompatActivity {
     //methods
 
     /*
-    *This method creates the current activity
+    *This method creates the current activity with an array of pictures
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auto_image_slider);
 
-        //viewFlipper = findViewById(R.id.viewFlipper);
-        //saveButton = findViewById(R.id.saveButton);
-
+        //matching properties with their xml view
         imageanim = findViewById(R.id.imageanim);
         buttonFast = findViewById(R.id.saveButtonFast);
         buttonSlow = findViewById(R.id.saveButtonSlow);
         doneButton = findViewById(R.id.done);
 
-
+        //creating an animation and initializing the settings
         animation = new AnimationDrawable();
         for ( int i = 0; i < imageArray.length; i++) {
             animation.addFrame(getResources().getDrawable(imageArray[i]), dur);
@@ -56,7 +54,7 @@ public class AutoImageSlider extends AppCompatActivity {
         imageanim.setImageDrawable(animation);
         animation.start();
 
-
+        //adding action listener to the button which fastens the animation
         buttonFast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +64,7 @@ public class AutoImageSlider extends AppCompatActivity {
             }
         });
 
+        //adding action listener to the button which slows the animation
         buttonSlow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,6 +74,7 @@ public class AutoImageSlider extends AppCompatActivity {
             }
         });
 
+        //making animation controlled by enabling pausing and resuming
         imageanim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,6 +88,7 @@ public class AutoImageSlider extends AppCompatActivity {
             }
         });
 
+        //finishing the editing process on the animation
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,41 +98,21 @@ public class AutoImageSlider extends AppCompatActivity {
 
             }
         });
-
-
-        //int images[] = {R.drawable.logo, R.drawable.logo1}; //BUNLARI Bİ YERDEN ALMAMIZ LAZIM
-
-        // for loop
-        //for (int image : images) {
-        //   flipperImages(image);
-        //}
     }
 
-    //public void flipperImages(int image){
-    // ImageView imageView = new ImageView(this);
-    //  imageView.setBackgroundResource(image);
-
-    //   viewFlipper.addView(imageView);
-    //  viewFlipper.setFlipInterval(100); // 1 sec
-    //  viewFlipper.setAutoStart(true);
-
-    //animation
-    //  viewFlipper.setInAnimation(this, android.R.anim.fade_in);
-    //   viewFlipper.setOutAnimation(this, android.R.anim.fade_out);
-    //}
-
-
-    //Save Button and OnClickListener
-    //saveButton.setOnClickListener(new View.OnClickListener() {
-    // @Override
-    //  public void onClick(View v) {
-    // Intent sendIntent = new Intent();
-    // sendIntent.setAction(Intent.ACTION_SEND);
-    //sendIntent.putExtra(Intent.EXTRA_, something");
-    //  sendIntent.setType("video/mp4");
-    //   Intent shareIntent = Intent.createChooser(sendIntent, null);
-    //   startActivity(shareIntent);
-    // }
-    //});
-
+    /*
+    //In this we tried to save the animation as an mp4 file instead of a viewflipper image.
+    Save Button and OnClickListener
+    saveButton.setOnClickListener(new View.OnClickListener() {
+     @Override
+      public void onClick(View v) {
+     Intent sendIntent = new Intent();
+     sendIntent.setAction(Intent.ACTION_SEND);
+    sendIntent.putExtra(Intent.EXTRA_, something");
+      sendIntent.setType("video/mp4");
+       Intent shareIntent = Intent.createChooser(sendIntent, null);
+       startActivity(shareIntent);
+     }
+    });
+    */
 }

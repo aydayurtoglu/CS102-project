@@ -1,10 +1,5 @@
 package com.example.momentum_demo;
 
-/**
- *This class represents the camera for our app
- * @author Beste Guney and Ece Teker
- * @version 1.0
- */
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -23,10 +18,8 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import androidx.annotation.RequiresApi;
 import androidx.core.content.FileProvider;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -34,28 +27,38 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static android.content.ContentValues.TAG;
-import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE;
-import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
-//import static androidx.constraintlayout.widget.Constraints.TAG;
-
+/**
+ *This class represents the camera for our app
+ * @author Beste Guney and Ece Teker
+ * @version 1.0
+ */
 @RequiresApi(api = Build.VERSION_CODES.N)
 public class CameraActivity extends Activity {
 
-    private String currentImagePath = null;
+    //constants
     private static final int IMAGE_REQUEST = 1;
 
+    //variables
+    private String currentImagePath;
     private Button captureButton;
     private File imageFile;
     private int count;
 
+    //methods
+
+    /*
+    This method starts the camera activity.
+     */
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera_preview);
 
+        //matching the button with its xml view
         captureButton = findViewById(R.id.captureButton1);
+
+        //adding action listener to the button
         captureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,8 +66,14 @@ public class CameraActivity extends Activity {
             }
         });
 
+        //initializing the variables
+        currentImagePath = null;
         count = 0;
     }
+
+    /*
+    This method captures the image by using an Intent object in android.
+     */
     public void captureImage(View view)
     {
         Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -90,12 +99,19 @@ public class CameraActivity extends Activity {
         }
     }
 
+    /*
+    This method shows the pages captured by the camera (the pictures in the array)
+    */
     public void displayImage(View view)
     {
         Intent intent = new Intent(this,ImageGallery.class);
         intent.putExtra("image_path", currentImagePath);
         startActivity(intent);
     }
+
+    /*
+    This method returns the file for saving the captured images
+     */
     private File getImageFile() throws IOException
     {
 
@@ -109,27 +125,17 @@ public class CameraActivity extends Activity {
 
     }
 
+    /*
+    This method helps the number of pictures taken by camera
+     */
     public void increaseCount() {
         count++;
     }
 
+    /*
+    This method returns the current picture number
+     */
     public int getCount() {
         return count;
     }
-
-//    @Override
-//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        if (requestCode == IMAGE_REQUEST) {
-//            if (resultCode == RESULT_OK) {
-//                // by this point we have the camera photo on disk
-//                Bitmap takenImage = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
-//                // RESIZE BITMAP, see section below
-//                // Load the taken image into a preview
-//                ImageView ivPreview = (ImageView) findViewById(R.id.mimageView);
-//                ivPreview.setImageBitmap(takenImage);
-//            } else { // Result was a failure
-//                Toast.makeText(this, "Picture wasn't taken!", Toast.LENGTH_SHORT).show();
-//            }
-//        }
-//    }
 }
