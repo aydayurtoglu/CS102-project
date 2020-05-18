@@ -1,7 +1,5 @@
 package com.example.momentum_demo;
 
-
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -19,7 +17,7 @@ import android.widget.ViewFlipper;
  */
 public class AutoImageSlider extends AppCompatActivity {
 
-    //private ViewFlipper viewFlipper;
+    //properties
     private AnimationDrawable animation;
     private ImageView imageanim;
     private Button buttonFast;
@@ -27,6 +25,11 @@ public class AutoImageSlider extends AppCompatActivity {
     private int[] imageArray = {R.drawable.logo1, R.drawable.logo, R.drawable.logo1, R.drawable.logo};
     private int dur = 300;
 
+    //methods
+
+    /*
+    *This method creates the current activity
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
