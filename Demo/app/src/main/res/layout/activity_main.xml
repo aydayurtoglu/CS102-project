@@ -23,12 +23,12 @@
 
     <Button
         android:id="@+id/ButtonAbout"
-        android:layout_width="wrap_content"
+        android:layout_width="276dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="26dp"
-        android:layout_marginBottom="153dp"
+        android:layout_marginBottom="154dp"
         android:background="#8E8E8E"
         android:text="ABOUT MOMENTUM"
         android:textColor="@android:color/black"
