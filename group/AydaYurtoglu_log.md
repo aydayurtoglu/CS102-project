@@ -63,6 +63,8 @@ and changed the color of backgrounds and some texts.
 
 ### ~ 18th May 2020 ~
 I did some minor adjustments to the design and added images to our image arrays to
-show how Momentum can make animations with these images. 
+show how Momentum can make animations with these images. I adjusted the help page and 
+AutoImageSlider class. I added different buttons to DrawActivity and AutoImageSlider
+classes. 
 
 ****
