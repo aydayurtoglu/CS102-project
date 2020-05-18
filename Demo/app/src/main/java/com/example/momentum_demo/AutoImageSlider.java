@@ -22,7 +22,7 @@ public class AutoImageSlider extends AppCompatActivity {
     private ImageView imageanim;
     private Button buttonFast;
     private Button buttonSlow;
-    private int[] imageArray = {R.drawable.logo1, R.drawable.logo, R.drawable.logo1, R.drawable.logo};
+    private int[] imageArray = {};
     private int dur = 300;
 
     //methods
