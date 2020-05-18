@@ -116,6 +116,18 @@ Beste and Ece will work on storage issues.
 Ayda and Can will work on adding more features to app.
 Eren and Ata will improve DrawActivity class.
 
+****
+### Meeting ~ (18th May 2020, an hour)
+****
+**Present:** All  _**Absent:** None
+
+**Discussion:** 
+We discuused the video that we should take until Wednesday and distributed the the work for it. We will also add minor changes to activities.
+
+
+**ToDo:** 
+Everyone will work on taking video in a good way.
+
 
 
 
