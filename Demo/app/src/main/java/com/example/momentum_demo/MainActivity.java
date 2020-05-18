@@ -16,15 +16,16 @@ public class MainActivity extends AppCompatActivity {
 
     //properties
     private Button buttonStart;
-    private ImageButton buttonHelp;
+    private Button buttonAbout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonHelp = findViewById(R.id.helpButton);
+        buttonAbout = findViewById(R.id.ButtonAbout);
         buttonStart = findViewById(R.id.ButtonStart);
+
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonHelp.setOnClickListener(new View.OnClickListener() {
+        buttonAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, HelpPage.class);
+                Intent intent = new Intent(MainActivity.this, AboutMomentum.class);
                 startActivity(intent);
             }
         });

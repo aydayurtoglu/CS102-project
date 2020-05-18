@@ -27,6 +27,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".DrawActivity"></activity>
         <activity android:name=".FullscreenActivity" />
+        <activity android:name=".AboutMomentum" />
         <activity android:name=".ImageGallery" />
         <activity android:name=".DisplayImage" />
         <activity android:name=".AutoImageSlider" />
