@@ -7,6 +7,22 @@
     android:background="#000000"
     tools:context=".AutoImageSlider">
 
+    <ImageView
+        android:id="@+id/imageanim"
+        android:layout_width="403dp"
+        android:layout_height="582dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveButtonFast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/cat1" />
+
     <Button
         android:id="@+id/saveButtonFast"
         style="?android:attr/buttonBarButtonStyle"
@@ -18,7 +34,7 @@
         android:layout_marginBottom="3dp"
         android:text="FASTER"
         android:textColor="#2196F3"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.842"
@@ -37,7 +53,7 @@
         android:layout_marginBottom="3dp"
         android:text="SLOWER"
         android:textColor="#2196F3"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.157"
@@ -45,21 +61,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <ImageView
-        android:id="@+id/imageanim"
-        android:layout_width="389dp"
-        android:layout_height="574dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/saveButtonFast"
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginLeft="158dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:background="#000000"
+        android:text="Done"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageanim"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cat1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

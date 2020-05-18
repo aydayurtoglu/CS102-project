@@ -15,7 +15,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="26dp"
         android:layout_marginBottom="68dp"
-        android:background="#1A69A5"
+        android:background="#1C85D8"
         android:text="GET STARTED"
         android:textColor="@android:color/black"
         android:textSize="25sp"
@@ -43,7 +43,7 @@
         android:layout_marginTop="329dp"
         android:gravity="center"
         android:text="WELCOME TO MOMENTUM"
-        android:textColor="#1A69A5"
+        android:textColor="#2196F3"
         android:textSize="25sp" />
 
     <TextView

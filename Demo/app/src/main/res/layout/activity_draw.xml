@@ -17,12 +17,28 @@
         android:background="@android:color/black"
         android:scaleType="centerInside" />
 
-    <Button
-        android:id="@+id/saveimage"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000000"
-        android:text="Save Image"
-        android:textColor="#2196F3"
-        android:textSize="24sp" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="Back To Gallery"
+            android:textColor="#2196F3"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/saveimage"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="Save Image"
+            android:textColor="#2196F3"
+            android:textSize="20sp" />
+    </LinearLayout>
+
 </LinearLayout>

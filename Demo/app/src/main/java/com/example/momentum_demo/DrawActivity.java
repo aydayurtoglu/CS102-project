@@ -28,7 +28,7 @@ import java.io.IOException;
 
 public class DrawActivity extends AppCompatActivity {
 
-    Button btnLoadImage, btnSaveImage;
+    Button btnGallery, btnSaveImage;
     ImageView imageResult;
 
     final int RQS_IMAGE1 = 1;
@@ -46,8 +46,9 @@ public class DrawActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw);
 
-        btnSaveImage = (Button)findViewById(R.id.saveimage);
-        imageResult = (ImageView)findViewById(R.id.result);
+        btnGallery = findViewById(R.id.gallery);
+        btnSaveImage = findViewById(R.id.saveimage);
+        imageResult = findViewById(R.id.result);
 
         paintDraw = new Paint();
         paintDraw.setStyle(Paint.Style.FILL);
@@ -55,16 +56,14 @@ public class DrawActivity extends AppCompatActivity {
         paintDraw.setStrokeWidth(10);
         saveImageView();
 
-        /*btnLoadImage.setOnClickListener(new View.OnClickListener() {
-
+        btnGallery.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View arg0) {
-                Intent intent = new Intent(Intent.ACTION_PICK,
-                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(intent, RQS_IMAGE1);
+            public void onClick(View v) {
+                Intent intent = new Intent(DrawActivity.this, ImageGallery.class);
+                startActivity(intent);
+
             }
         });
-         */
 
         btnSaveImage.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -21,6 +21,7 @@ public class AutoImageSlider extends AppCompatActivity {
     private AnimationDrawable animation;
     private ImageView imageanim;
     private Button buttonFast;
+    private Button doneButton;
     private Button buttonSlow;
     private int[] imageArray = {R.drawable.cat1, R.drawable.cat2, R.drawable.cat3, R.drawable.cat4,
             R.drawable.cat5, R.drawable.cat6, R.drawable.cat7, R.drawable.cat8, R.drawable.cat9,
@@ -46,6 +47,7 @@ public class AutoImageSlider extends AppCompatActivity {
         imageanim = findViewById(R.id.imageanim);
         buttonFast = findViewById(R.id.saveButtonFast);
         buttonSlow = findViewById(R.id.saveButtonSlow);
+        doneButton = findViewById(R.id.done);
 
 
         animation = new AnimationDrawable();
@@ -85,6 +87,15 @@ public class AutoImageSlider extends AppCompatActivity {
                 animation.setOneShot(true); //If true, the animation will only run a single time and then stop.
                 imageanim.setImageDrawable(animation);
                animation.start();
+            }
+        });
+
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AutoImageSlider.this, MainActivity.class);
+                startActivity(intent);
+
             }
         });
 
