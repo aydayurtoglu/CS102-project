@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.momentum_demo.DrawActivity">
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@android:color/black"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="Back To Gallery"
+            android:textColor="#2196F3"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/saveimage"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="Save Image"
+            android:textColor="#2196F3"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -94,11 +94,39 @@ Everyone will work on solving these problems.
 **Present:** All  _**Absent:** None
 
 **Discussion:** 
-We discussed about the progress of our project and a major problem about external storage and gallery view of it.
+We discussed about the progress of our project with the TA and a major problem about internal storage and gallery view of it.
+We also discussed our UML diagram since it changed as we wrote the code and created a new diagram.
 
 
 **ToDo:** 
-Everyone will work on solving this problem.
+Beste and Ece will work on taking images from our internal storage. Ayda and Can will work on adjusting the speed of the animation.
+Eren and Ata will work on adding a drawing feature to FullscreenActivity.
+
+****
+### Meeting ~ (17th May 2020, an hour)
+****
+**Present:** All  _**Absent:** None
+
+**Discussion:** 
+We discuused about features we added such as drawing on an image and changing speed and duration of animation.
+
+
+**ToDo:** 
+Beste and Ece will work on storage issues.
+Ayda and Can will work on adding more features to app.
+Eren and Ata will improve DrawActivity class.
+
+****
+### Meeting ~ (18th May 2020, an hour)
+****
+**Present:** All  _**Absent:** None
+
+**Discussion:** 
+We discuused the video that we should take until Wednesday and distributed the the work for it. We will also add minor changes to activities.
+
+
+**ToDo:** 
+Everyone will work on taking video in a good way.
 
 
 

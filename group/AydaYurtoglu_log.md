@@ -56,4 +56,15 @@ I worked together with Ata, Can and Ece to get images in our file and put them
 in an int array. We discovered how we can change the name of the picture files
 and plan to use this to identify the images in the file.
 
+### ~ 16th May 2020 ~
+I worked with Can and adjusted AutoImageSlider class so that the user can 
+change the speed of their animation. I also adjusted the layout of some activities
+and changed the color of backgrounds and some texts.
+
+### ~ 18th May 2020 ~
+I did some minor adjustments to the design and added images to our image arrays to
+show how Momentum can make animations with these images. I adjusted the help page and 
+AutoImageSlider class. I added different buttons to DrawActivity and AutoImageSlider
+classes. 
+
 ****

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    tools:context=".HelpPage">
+    tools:context=".AboutMomentum">
 
     <ScrollView
         android:layout_width="400dp"
@@ -27,20 +27,22 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Welcome to the Help Page \n"
-                android:textColor="#2196F3"
-                android:textSize="28sp" />
-
-            <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView4"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
-                android:text="@string/help1"
+                android:text="\nWelcome to Momentum app. This app is created for you to make animations instantly with a basic perspective. \n"
+                android:textColor="@color/design_default_color_background"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="350dp"
+                android:layout_height="242dp"
+                android:text="@string/about"
                 android:textColor="@color/design_default_color_background"
                 android:textSize="24sp" />
+
+
         </LinearLayout>
     </ScrollView>
 
