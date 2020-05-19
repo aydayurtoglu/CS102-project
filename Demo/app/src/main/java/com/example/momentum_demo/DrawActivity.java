@@ -1,5 +1,6 @@
 package com.example.momentum_demo;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -37,13 +38,14 @@ public class DrawActivity extends AppCompatActivity {
     private Bitmap bitmapMaster;
     private Canvas canvasMaster;
     private int prvX, prvY;
-    private  Paint paintDraw;
+    private Paint paintDraw;
 
     //methods
 
     /*
     This method initialises the properties for drawing activity
      */
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
