@@ -26,6 +26,6 @@ I have started writed some code and continued to learn from the online course. I
 Ayda and me worked on AutoImageSlider class and we replaced some code with the new AnimationDrawable code which I found recently. Also, we added some buttons and features that enables user to change the animations speed and play it with a tap on the image. This changes made the last page a mini video player.
 
 ### May 18 - May 24
-I added an About Momentum page which contains the information related to app and our names which can be entered directly from the main page.
+I added an About Momentum page which contains the information related to app and our names which can be entered directly from the main page. Also, I collected all the clips taken from group members and edited them on my computer to make a video.
 
 
