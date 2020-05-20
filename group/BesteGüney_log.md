@@ -27,12 +27,16 @@ This week, I searched for libraries that we can use in our project.
 	From websites github and android arsenal
 I searched for how internal storage in applications are used in android.
 
-### 04.04.2020 - 10.04.2020
+### 04.05.2020 - 10.05.2020
 This week I and Ece wrote the code of camera. We wrote CameraActivity class and their xml files for it.
 We found the necessary code on the Website "Android Developers". In addition to that, I wrote the 
 paths to save the images that captured in the phone. This way we can extract these pictures to turn into 
 a video.
 
-### 11.04.2020 - 17.04.2020
+### 11.05.2020 - 17.05.2020
 This week, Ece and I worked on extracting pictures from files and save them into an array. This way we hoped to
 turn them into animations. We tried several projects on Github. We solved the problem for opening the gallery.
+
+### 18.05.2020 - 24.05.2020
+This week, I wrote javadoc parts of our project and made some arrangements on the code. Finally, we 
+recorded a video explaining our project and in this video I showed some parts of our code.
