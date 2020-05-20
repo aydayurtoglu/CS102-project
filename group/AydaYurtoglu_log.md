@@ -67,4 +67,10 @@ show how Momentum can make animations with these images. I adjusted the help pag
 AutoImageSlider class. I added different buttons to DrawActivity and AutoImageSlider
 classes. 
 
+### ~ 19th May 2020 ~
+I took the video of my part of the presentation.
+
+### ~ 20th May 2020 ~
+I helped Can to make the video.
+
 ****

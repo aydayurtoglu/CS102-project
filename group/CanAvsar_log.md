@@ -20,7 +20,12 @@ I watched some videos to learn how to write code to take picture with camera and
 I made some research and also enrolled an Udemy course which is about the basics of Android Studio. Watched a little, but trying to finish it as soon as I can.
 
 ### May 4 - May 11
-I have started writed some code and continued to learn from the online course. It is a long course but when I finish it, I will have learned much about Android Studio. I and Ayda wrote some code about app's Projects page and made some design by adding some buttons and text panels.
+I have started writed some code and continued to learn from the online course. It is a long course but when I finish it, I will have learned much about Android Studio. Me and Ayda wrote some code about app's Projects page and made some design by adding some buttons and text panels.
 
+### May 11 - May 17
+Ayda and me worked on AutoImageSlider class and we replaced some code with the new AnimationDrawable code which I found recently. Also, we added some buttons and features that enables user to change the animations speed and play it with a tap on the image. This changes made the last page a mini video player.
+
+### May 18 - May 24
+I added an About Momentum page which contains the information related to app and our names which can be entered directly from the main page. Also, I collected all the clips taken from group members and edited them on my computer to make a video.
 
 

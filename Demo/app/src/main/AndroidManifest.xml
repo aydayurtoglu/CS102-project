@@ -29,7 +29,6 @@
         <activity android:name=".FullscreenActivity" />
         <activity android:name=".AboutMomentum" />
         <activity android:name=".ImageGallery" />
-        <activity android:name=".DisplayImage" />
         <activity android:name=".AutoImageSlider" />
         <activity android:name=".HelpPage" />
         <activity android:name=".Main2Activity" />
