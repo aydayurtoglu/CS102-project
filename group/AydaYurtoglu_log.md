@@ -73,4 +73,8 @@ I took the video of my part of the presentation.
 ### ~ 20th May 2020 ~
 I helped Can to make the video.
 
+### ~ 23th May 2020 ~
+I fixed the UML diagram and the detailed design report, so it would fit the final
+version of our code. I submitted it to Moodle.
+
 ****
