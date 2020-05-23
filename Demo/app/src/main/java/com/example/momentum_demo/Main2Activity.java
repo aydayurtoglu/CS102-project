@@ -22,7 +22,6 @@ public class Main2Activity extends AppCompatActivity {
 
     //variables
     private ImageButton buttonHelp;
-    private ArrayList<ImageButton> buttons;
     private ImageButton buttonAdd;
 
     //methods
@@ -34,9 +33,6 @@ public class Main2Activity extends AppCompatActivity {
 
         buttonHelp = findViewById(R.id.helpButton);
         buttonAdd = findViewById(R.id.addButton);
-
-
-        buttons = new ArrayList<ImageButton>();
 
         //adding actionListener to the button
         buttonHelp.setOnClickListener(new View.OnClickListener() {
