@@ -54,7 +54,12 @@ animation's speed and play it over and over. The activity looks and works like a
 Then, I worked for the ImageAdapter class with some of group members. Finally, I wanted all 
 members topk a clip for the video, then I combined and edited the clips to make a video. 
 
-Eren:
+Eren: I researched on basic mechanics of Android Studio and the creation of our object oriented design; in 
+particular, on how to save and manipulate the photos taken with the app. Eventually me 
+and Ata wrote the DrawActivity class and its activity. I drew the UML diagram that is given on the
+first report of our app and helped with the design of some classes' layouts. Also I tried to format some of 
+our logos and thumbnails via Photoshop to create a better visual experience. I researched on how to keep the photos
+taken, but we couldn't work it out in our case. 
 
 Ata: Eren and I wrote the DrawActivity class and its activity. I was also responsible
 from meeting logs about what we discussed and decided to do until next meeting. Other than these,
