@@ -31,7 +31,17 @@ Activity and ImageGallery Activity. We adjusted the ImageAdapter class with the 
 group members. I did research on the storage of images a lot. I finalized some of 
 the reports, the code and the UML diagram. 
 
-Beste:
+Beste: I wrote the code for the camera activity of our project. I managed to do this by
+working with Ece. In order to implement it we made research on the websites like "Android 
+developers". These pages were quite helpful. We implemented two cameras for our application.
+The very first camera we used was the camera of Android Studio. It was working fine but the
+quality of it was not very good. So by doing more research we needed to rewrite a new camera.
+Now, in our project we are using the last camera. Ece and I also worked on classes like Project and Video
+to create a MVC pattern in our project. We planned to use Project class as our model but when we further
+progressed in our project we realized that it is really hard to create MVC in android studio.
+I also write the code for storing the captured images by camera. Now, the pictures taken by camera can be 
+stored in the storage of mobile phones. However, Ece and I tried to get this data from storage but we 
+couldn't do it.
 
 Can:
 
