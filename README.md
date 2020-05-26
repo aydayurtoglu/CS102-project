@@ -4,18 +4,18 @@ The information and code in this repository are submitted in partial fulfillment
 ****
 ## g2E ~~ Momentum ~~
 ****
-### ~ optional group name ~
+### ~ Momentum ~
 
 ## Project Description
-_Include a concise description of your project here. Be sure to include the proposed users, the architecture (eg. desktop, web, mobile, embedded, etc.) & screenshots when available._
+Momentum app allows people who are interested in creating animations to easily capture photos and make animations with them. It makes creating stop motion animations easy and fun. 
    
 ## Project Status
-+ **Group/project Selection:** completed (date)
-+ **Requirements:** completed (date)
-+ **UI Design:** completed (date)
-+ **Detailed Design:** in progress
-+ **Implementation:** not started!
-+ **Reflections:** not yet!
++ **Group/project Selection:** completed (05.02.2020)
++ **Requirements:** completed (08.03.2020)
++ **UI Design:** completed (30.03.2020)
++ **Detailed Design:** completed (23.05.2020)
++ **Implementation:** completed (19.05.2020)
++ **Reflections:** completed (27.05.2020)
 
 [Group Meetings Log](group/meetingslog.md)
 #### Group Members

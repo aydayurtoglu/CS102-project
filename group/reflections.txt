@@ -1,0 +1,38 @@
+We have spent months on designing and implementing our project, Momentum. This was
+our first experience of working on a project for months and as a group. We think 
+that as we are computer science students, it is highly essential for us to be able
+to work as a group. So we all learned how to organize our meetings, writing reports
+and implementing the project as a group. GitHub is another aspect that is essential
+for us and we all learned how to use it. We understood that splitting the workload
+and doing the work that is assigned to you are very important in teamwork. We also
+improved our research skills while searching for libraries and deciding which one
+to use. 
+
+We disliked the fact that we had to work online for the half of the semester. It was
+difficult to arrange meetings and write code without having trouble with Git. Still,
+this helped us learn how to work with communicating with each other. 
+
+The most difficult aspect was working with Android Studio, which none of us knew how
+to use it before. So we had to learn it from scratch and we had to start implementing
+the project later than we expected. We spent a lot of time to understand how it worked.
+Also Android Studio has a different understandingof MVC pattern, so it was hard to 
+adjust to it. Therefore, creating the UML diagram was really hard and we had to adjust
+it many times before it was finalized. Also, the storage of the information in the app
+was really hard to construct. We managed to store images but couldn't retrieve them.
+We tried working with a database but failed. 
+
+If we had to start over again, we would design a desktop app instead of a mobile app
+and work with and IDE that we already have previous experience. Also even if we worked
+with Android Studio again, we would have started earlier to learn it and spent more
+time with implementation.
+
+We all spent a lot of time for this project. Some of us worked between their lessons
+and we had at least one meeting during to discuss the progress we have made every week.
+We had three to four meetings with other group members who were to available to write 
+the code, which lasted one to three hours.
+
+We are proud of what we have achieved even though it is not completed. We all learned 
+how to work with Android Studio and as a group, so we think that this experience will
+contribute very much to our future projects. We saw that we can create a functioning
+app. We are proud with the design of our app and the idea behind it. We are proud of 
+the hardworking group members who spent hours on designing and implementing the project.

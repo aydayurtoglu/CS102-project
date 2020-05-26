@@ -77,4 +77,7 @@ I helped Can to make the video.
 I fixed the UML diagram and the detailed design report, so it would fit the final
 version of our code. I submitted it to Moodle.
 
+### ~ 26th May 2020 ~
+I adjusted the README.txt, readme2.txt and reflections.txt files. 
+
 ****
