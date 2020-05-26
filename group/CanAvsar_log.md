@@ -28,4 +28,5 @@ Ayda and me worked on AutoImageSlider class and we replaced some code with the n
 ### May 18 - May 24
 I added an About Momentum page which contains the information related to app and our names which can be entered directly from the main page. Also, I collected all the clips taken from group members and edited them on my computer to make a video.
 
-
+### May 25 - May 31
+I updated my logs, and wrote what I have done on readme2.txt with all my group members. Also, we prepared for the final code and made some adjustments on our GitHub page.
