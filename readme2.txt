@@ -39,7 +39,13 @@ Eren:
 
 Ata:
 
-Ece:
+Ece: I worked on implementing the camera in our app with Beste. We first tried using
+the camera of the Android Studio but then we have decided to use another camera because
+the quality of the first camera was not as good as we have wanted it to be. I helped 
+writing the UML diagram, and the help page for our app. Beste and I wrote the video and photos
+classes but we ended up not using them because we found better solutions. Beste and I also
+did researches and worked on multiple ways of trying to get our data from the internal storage
+but it did not work out.
 
 *also give details of the software used, including version numbers, libraries, etc., 
 as well as instructions for setup, compilation & running of the project*
