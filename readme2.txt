@@ -43,7 +43,16 @@ I also write the code for storing the captured images by camera. Now, the pictur
 stored in the storage of mobile phones. However, Ece and I tried to get this data from storage but we 
 couldn't do it.
 
-Can: First, I prepared the slideshow and logo for describing and present the program in front of CS102 students. We presented it with Ayda. Then I made some design for the interface of application and we tried the follow it. When we have the design, we discussed how our classes should be and tried to write our codes. I wrote the About Momentum class which describes what is Momentum and what we provide users in this program. Also, Ayda and me wrote the AutoImageSlider class. My research helped us a lot while we are trying the change the speed of the animation. We have done that successfully, it is working properly and the user now be able to change the animation's speed and play it over and over. The activity looks and works like a video player. Then, I worked for the ImageAdapter class with some of group members. Finally, I wanted all members topk a clip for the video, then I combined and edited the clips to make a video. 
+Can: First, I prepared the slideshow and logo for describing and present the program in front 
+of CS102 students. We presented it with Ayda. Then I made some design for the interface of 
+application and we tried the follow it. When we have the design, we discussed how our classes
+should be and tried to write our codes. I wrote the About Momentum class which describes what 
+is Momentum and what we provide users in this program. Also, Ayda and me wrote the AutoImageSlider 
+class. My research helped us a lot while we are trying the change the speed of the animation. 
+We have done that successfully, it is working properly and the user now be able to change the
+animation's speed and play it over and over. The activity looks and works like a video player. 
+Then, I worked for the ImageAdapter class with some of group members. Finally, I wanted all 
+members topk a clip for the video, then I combined and edited the clips to make a video. 
 
 Eren:
 
