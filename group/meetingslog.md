@@ -128,6 +128,19 @@ We discuused the video that we should take until Wednesday and distributed the t
 **ToDo:** 
 Everyone will work on taking video in a good way.
 
+****
+### Meeting ~ (20th May 2020, half an hour)
+****
+**Present:** All  _**Absent:** None
+
+**Discussion:** 
+We took the parts of the video and Can edited and rendered them yesterday. In this meeting, we watched the last version of the video and decided that it is okay and ready to upload to Youtube.
+
+
+**ToDo:** 
+Ata will upload the video to Youtube and its link to Moodle. 
+
+
 
 
 

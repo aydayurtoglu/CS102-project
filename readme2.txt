@@ -56,7 +56,12 @@ members topk a clip for the video, then I combined and edited the clips to make 
 
 Eren:
 
-Ata:
+Ata: Eren and I wrote the DrawActivity class and its activity. I was also responsible
+from meeting logs about what we discussed and decided to do until next meeting. Other than these,
+I researched a lot about mechanics of Android Studio and features that we used in other classes
+such as using camera, storage and creating animation and helped my friends a little to write other 
+classes. Finally, I made minor changes on designs and order of activities.
+
 
 Ece: I worked on implementing the camera in our app with Beste. We first tried using
 the camera of the Android Studio but then we have decided to use another camera because
@@ -66,5 +71,11 @@ classes but we ended up not using them because we found better solutions. Beste 
 did researches and worked on multiple ways of trying to get our data from the internal storage
 but it did not work out.
 
-*also give details of the software used, including version numbers, libraries, etc., 
-as well as instructions for setup, compilation & running of the project*
+We used latest version, 3.6.3, of Android Studio for our project, developed by Google and JetBrains, built on 
+JetBrains' IntelliJ IDEA software which is another IDE and designed specifically for Android development.
+We used classic Java libraries that we used in CS101 & 102 and Android libraries which brought by Android Studio and
+allowed us to create designs, use hardwares of a smartphone and run the project as an app on Android OS.
+Our project, or app to be precise, can work on any Android OS. For example, you can use an  Android emulator which
+is basically a smartphone in your PC or you can connect your Android phone to your PC as the platform for the app.
+When you have the platform to run the app, you can compile, setup and run the app from Android Studio and use it as a regular app.
+

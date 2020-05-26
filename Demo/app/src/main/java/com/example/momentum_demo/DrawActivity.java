@@ -22,7 +22,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * DrawActivity class (drawing shit) """NEAT"""
+ * DrawActivity class (drawing stuff) """NEAT"""
  * @author Ata Seren, Eren Polat
  * @version 1.0
  */
