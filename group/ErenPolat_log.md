@@ -17,7 +17,7 @@ searched on how to use the camera of the phone for our app.
 
 ### ~ 22 April 2020
 I did brainstorm about the ideas to draw our UML, and to build a class hierarchy for
-our project. Searche
+our project. Adjusted the Help page, but we changed it afterwards.
 
 ### ~ 29 April 2020
 
@@ -26,8 +26,13 @@ store the photos that we took in the app and perhaps how to show them subsequent
 of ours. 
 
 ### ~ 6 May 2020
-This week I drew the UML diagram of our code and made some thumbnails and logos through Photoshop. 
+This week I drew the UML diagram of our code and made some thumbnails and logos through Photoshop. I also researched 
+on how we can store the pictures taken by the camera of our app, but I couldn't implement it in our program.  
 
 ### ~ 13 May 2020
 This week, Ata and I wrote the code for drawActivity class and integrated it to our program code, the class adds a
 feature that allows the user to draw onto the photos taken. 
+
+### ~ 20 May 2020 ~
+I took the video of my part of the presentation.
+
